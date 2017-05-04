@@ -1,0 +1,22 @@
+{
+  "name": "interface3-v1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roni0101/interface3-v1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roni0101/interface3-v1/issues"
+  },
+  "homepage": "https://github.com/roni0101/interface3-v1#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
