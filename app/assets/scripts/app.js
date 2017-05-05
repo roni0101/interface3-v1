@@ -40,8 +40,6 @@ var app = (function() {
 
 // Event listeners
 
-$(document).on('click', '.btn-switch', function function_name(argument) {
-	console.log(argument);
-});
+$(document).on('click', '.btn-switch', app.switchWindow);
 
 

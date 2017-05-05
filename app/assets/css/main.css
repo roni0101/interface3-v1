@@ -17,6 +17,26 @@ li {
   width: 80%;
   margin: auto; }
 
+.form {
+  width: 90%;
+  display: block;
+  margin: auto;
+  text-align: center; }
+  .form label, .form input {
+    text-align: left;
+    width: 80%;
+    display: block; }
+  .form label {
+    margin-top: 10px; }
+
+@media only screen and (min-width: 601px) and (max-width: 901px) {
+  .form {
+    width: 60%; } }
+
+@media only screen and (min-width: 901px) {
+  .form {
+    width: 40%; } }
+
 .navbar {
   position: fixed;
   top: 0;
@@ -25,6 +45,8 @@ li {
   height: auto;
   min-height: 50px;
   background-color: #009688; }
+  .navbar a {
+    color: white; }
   .navbar .nav-brand, .navbar .hide-nav {
     position: absolute;
     top: 0;
@@ -53,15 +75,20 @@ li {
 @media only screen and (min-width: 901px) {
   .navbar {
     display: flex; }
-    .navbar .nav-brand {
-      position: relative;
-      display: inline-block; }
     .navbar .hide-nav {
       display: none; }
     .navbar ul {
-      float: left;
+      position: absolute;
+      right: 10%;
       margin: 0;
-      display: inline-block; } }
+      display: inline-block; }
+      .navbar ul li {
+        display: inline-block;
+        margin-right: 20px; }
+        .navbar ul li a {
+          padding: 0 10px; }
+          .navbar ul li a:hover {
+            background-color: #00796B; } }
 
 .wdw {
   display: none; }
@@ -73,7 +100,7 @@ li {
   width: 100%;
   display: block;
   margin-top: 50px;
-  background-color: red; }
+  padding-top: 50px; }
 
 body {
   background: #f2f2f2; }

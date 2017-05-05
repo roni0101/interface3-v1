@@ -9,6 +9,10 @@ $nav-height: 50px;
 	min-height: $nav-height;
 	background-color: $main-color;
 
+	a{
+		color:white;
+	}
+
 
 	.nav-brand, .hide-nav{
 		position: absolute;
@@ -51,20 +55,29 @@ $nav-height: 50px;
 	.navbar{
 		display: flex;
 
-		.nav-brand{
-			position: relative;
-			display: inline-block;
-
-		}
 		.hide-nav{
 			display: none;
 		}
 
 
 		ul{
-			float: left;
+			position: absolute;
+			right: 10%;
 			margin: 0;
 			display: inline-block;
+
+			li{
+				display: inline-block;
+				margin-right:20px;
+
+				a{
+					padding: 0 10px;
+					&:hover{
+						background-color:$d-main-color;
+					}
+				}
+	
+			}
 
 		}
 

@@ -3,6 +3,7 @@
 <head>
 	<title>Test</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 
 
@@ -10,12 +11,13 @@
 
 <nav class="navbar">
 	<div class="nav-brand">
-		<a href="#">Brand</a>
+		<a class="btn-switch" data-wdw="home" href="#">BRAND</a>
 	</div>
 
 	<ul>
-		<li><a href="#">Home</a></li>
-		<li><a href="#">About</a></li>
+		<li><a class="btn-switch" data-wdw="search" href="#">Search</a></li>
+		<li><a class="btn-switch" data-wdw="register" href="#">Register</a></li>
+		<li><a class="btn-switch" data-wdw="login" href="#">Login</a></li>
 	</ul>
 
 	<div class="hide-nav">
@@ -28,127 +30,121 @@
 	
 	
 	<div class="wdw" id="wdw-home">
-		asd
-		Results
-		Results
-		Results
-
-		Results
-		Results
-		Results
-		Results
-		Results
-		Results
-		
-	</div>
-
-
-	<div class="wdw" id="wdw-search">
-	    <form class="flex-form">
-
-	      <div class="first-row">
-	        <input type="search" placeholder="Departure airport">
-	      	<input type="search" placeholder="Arrival airport" >
-	     </div> 
-
-	      <div class="second-row">
-	      	<label for="from">From</label>
-	      	<input type="date" name="from">
-
-	      	<label for="from">To</label>
-	      	<input type="date" name="to">
-	      </div>	  
-
-	      <div class="third-row">
-	      	<i  for="passangers" class="fa fa-user" aria-hidden="true"></i>
-	      	<input type="number" min="1" max="10" value="1" name="passangers">
-	      </div>
-
-	    </form>
-	</div>
-
-	
-	<div class="wdw" id="wdw-register">
-
-		<div class="flex-inner">
-
-			<form>
-				<ul>
-					<li>
-					<label for="firstName" >First Name:</label>
-					<input id="firstName" class="form-control" type="text" placeholder="firstName" required=""/>
-					</li>
-					<li>
-						<label for="lastName" >Last Name:</label>
-						<input id="lastName" type="text" placeholder="lastName" required=""/>
-					</li>
-					<li>
-						<label for="" >Company Name: </label>
-						<input id="companyName" type="text" placeholder="companyName" required=""/>
-					</li>
-					<li>
-						<label for="address">Address: </label>
-						<input id="address" type="text" placeholder="address" required=""/>
-					</li>
-					<li>
-						<label for="city">City: </label>
-						<input id="city" type="text" placeholder="city" required=""/>
-					</li>
-					<li>
-						<label for="postNumber">Post Number: </label>
-						<input id="postNumber" type="text" placeholder="postNumber" required=""/>
-					</li>
-					<li>
-						<label for="phone">Phone: </label>
-						<input id="phone"  type="text" placeholder="Phone" required=""/>
-					</li>
-					<li>
-						<label for="businessPhone">Business Phone: </label>
-						<input id="businessPhone" type="text" placeholder="Business Phone" required=""/>
-					</li>
-					<li> 
-						<label for="email">Email: </label>
-						<input id="email" type="text" placeholder="Email" required=""/>
-					</li>
-					<li>
-						<label for="password">Password: </label>
-						<input id="password" type="password" placeholder="Password" required=""/>
-					</li>
-					
-					<li>
-						<label for="comfirmPassword" >Comfirm Password: </label>
-						<input id="comfirmPassword" type="password" placeholder="Comfirm Password" required=""/>
-					</li>
-					<li>
-					<button id="btnRegister" type="submit">Submit</button>
-					
-					<button id="btnCancel" type="button">Cancel</button>
-					</li>
-				</ul>
-			</form>
-
+		<div class="container">
+			<h2>WELLCOME</h2>
 		</div>
-		
+	</div>
+
+
+	<!-- START WDW SEARCH -->
+	<div class="wdw" id="wdw-search">
+		<div class="container">
+			<h2>SEARCH FLYIGHTS</h2>
+		    <form class="flex-form form">
+		      <div class="first-row">
+		        <input type="search" placeholder="Departure airport">
+		      	<input type="search" placeholder="Arrival airport" >
+		     </div> 
+		      <div class="second-row">
+		      	<label for="from">From</label>
+		      	<input type="date" name="from">
+		      	<label for="from">To</label>
+		      	<input type="date" name="to">
+		      </div>	  
+		      <div class="third-row">
+		      	<i  for="passangers" class="fa fa-user" aria-hidden="true"></i>
+		      	<input type="number" min="1" max="10" value="1" name="passangers">
+		      </div>
+		    </form>
+	    </div>
+	</div>
+
+	
+
+	<div class="wdw" id="wdw-register">
+		<div class="container">
+			<h2>REGISTER</h2>
+			<div class="flex-inner">
+				<form class="form">
+					<ul>
+						<li>
+						<label for="firstName" >First Name:</label>
+						<input id="firstName" class="form-control" type="text" placeholder="firstName" required=""/>
+						</li>
+						<li>
+							<label for="lastName" >Last Name:</label>
+							<input id="lastName" type="text" placeholder="lastName" required=""/>
+						</li>
+						<li>
+							<label for="" >Company Name: </label>
+							<input id="companyName" type="text" placeholder="companyName" required=""/>
+						</li>
+						<li>
+							<label for="address">Address: </label>
+							<input id="address" type="text" placeholder="address" required=""/>
+						</li>
+						<li>
+							<label for="city">City: </label>
+							<input id="city" type="text" placeholder="city" required=""/>
+						</li>
+						<li>
+							<label for="postNumber">Post Number: </label>
+							<input id="postNumber" type="text" placeholder="postNumber" required=""/>
+						</li>
+						<li>
+							<label for="phone">Phone: </label>
+							<input id="phone"  type="text" placeholder="Phone" required=""/>
+						</li>
+						<li>
+							<label for="businessPhone">Business Phone: </label>
+							<input id="businessPhone" type="text" placeholder="Business Phone" required=""/>
+						</li>
+						<li> 
+							<label for="email">Email: </label>
+							<input id="email" type="text" placeholder="Email" required=""/>
+						</li>
+						<li>
+							<label for="password">Password: </label>
+							<input id="password" type="password" placeholder="Password" required=""/>
+						</li>
+						
+						<li>
+							<label for="comfirmPassword" >Comfirm Password: </label>
+							<input id="comfirmPassword" type="password" placeholder="Comfirm Password" required=""/>
+						</li>
+						<li>
+						<button id="btnRegister" type="submit">Submit</button>
+						
+						<button id="btnCancel" type="button">Cancel</button>
+						</li>
+					</ul>
+				</form>
+			</div>
+		</div>
 	</div>
 	
+
+
 	<div class="wdw" id="wdw-login">
-		<div class="flex-outer">
-			<form>
-				<ul>
-					<li>
-						<label for="email">Email</label>
-						<input id="email" type="text" placeholder="Email" required=""/>
-					</li>
-					<li>
-						<label for="password">Password:</label>
-						<input id="password" type="password" placeholder="Password" required=""/>
-					</li>
-				</ul>
-				
-				<button id="btnLogin" type="submit">Logint</button>
-				<button id="btnCancel" type="button" >Cancel</button>
-			</form>
-		</div>	
+		<div class="container">
+			<div class="flex-outer">
+				<form class="form">
+					<ul>
+						<li>
+							<label for="email">Email</label>
+							<input id="email" type="text" placeholder="Email" required=""/>
+						</li>
+						<li>
+							<label for="password">Password:</label>
+							<input id="password" type="password" placeholder="Password" required=""/>
+						</li>
+					</ul>
+					
+					<button id="btnLogin" type="submit">Logint</button>
+					<button id="btnCancel" type="button" >Cancel</button>
+				</form>
+			</div>	
+		</div>
 	</div>
 
 </main>

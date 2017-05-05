@@ -1,0 +1,28 @@
+.form{
+	width:90%;
+	display:block;
+	margin:auto;
+	text-align:center;
+
+
+	label, input{
+		text-align: left;
+		width:80%;
+		display: block;
+	}
+	label{
+		margin-top:10px;
+	}
+}
+
+@include respond-to(medium) {
+	.form{
+		width:60%;
+	}
+}
+
+@include respond-to(large) {
+	.form{
+		width:40%;
+	}
+}
