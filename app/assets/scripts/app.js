@@ -13,7 +13,7 @@ var app = (function() {
 	// add attr data-wdw="name_of_window"
 	// Or just call the function width the wdw name as a string
 	// switchWindow(window_to_switch)
-	
+
 	function switchWindow(argument) {
 
 		var wdwName = "";
@@ -40,7 +40,8 @@ var app = (function() {
 
 // Event listeners
 
-$(document).on('click', '.btn-switch', app.switchWindow);
-
+$(document).on('click', '.btn-switch', function function_name(argument) {
+	console.log(argument);
+});
 
 
