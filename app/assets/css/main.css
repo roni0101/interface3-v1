@@ -1,3 +1,22 @@
+html, body {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+ul, li {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+.container {
+  display: block;
+  width: 80%;
+  margin: auto; }
+
 .wdw {
   display: none; }
 
@@ -7,4 +26,5 @@
 #main-container {
   width: 100%;
   display: block;
-  margin-top: 50px; }
+  margin-top: 50px;
+  background-color: red; }
