@@ -1,0 +1,47 @@
+$nav-height: 50px;
+
+.navbar{
+	position: fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height: auto;
+	min-height: $nav-height;
+	background-color: $main-color;
+
+
+	.nav-brand, .hide-nav{
+		position: absolute;
+		top:0;
+		height: $nav-height;
+		display: flex;
+		align-items:center;
+	}
+	.nav-brand{
+		left: 10%;
+	}
+	.hide-nav{
+		right: 10%;
+	}
+
+	ul{
+		position: relative;
+		margin-top: $nav-height;
+
+
+		li{
+			height: 50px;
+			border-top: 1px solid rgba(255,255,255, 0.1);
+
+			a{
+				width: 100%;
+				display: inline-block;
+				height: $nav-height;
+				display: flex;
+				justify-content:center;
+				align-items:center;
+				color:white;
+			}
+		}
+	}
+}
