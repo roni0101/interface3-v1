@@ -17,6 +17,39 @@ li {
   width: 80%;
   margin: auto; }
 
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  min-height: 50px;
+  background-color: #009688; }
+  .navbar .nav-brand, .navbar .hide-nav {
+    position: absolute;
+    top: 0;
+    height: 50px;
+    display: flex;
+    align-items: center; }
+  .navbar .nav-brand {
+    left: 10%; }
+  .navbar .hide-nav {
+    right: 10%; }
+  .navbar ul {
+    position: relative;
+    margin-top: 50px; }
+    .navbar ul li {
+      height: 50px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1); }
+      .navbar ul li a {
+        width: 100%;
+        display: inline-block;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white; }
+
 .wdw {
   display: none; }
 
