@@ -49,6 +49,7 @@ $nav-height: 50px;
 
 @include respond-to(large) {
 	.navbar{
+		display: flex;
 
 		.nav-brand{
 			position: relative;
