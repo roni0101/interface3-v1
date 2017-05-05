@@ -2,10 +2,10 @@
 Instructions
 
 Git:
-  git add -A
-  git commit -m "Message"
-  git pull
-  git push
+  - git add -A
+  - git commit -m "Message"
+  - git pull
+  - git push
 
 Need:
   - Node
