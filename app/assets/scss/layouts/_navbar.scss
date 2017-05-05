@@ -45,3 +45,27 @@ $nav-height: 50px;
 		}
 	}
 }
+
+
+@include respond-to(large) {
+	.navbar{
+
+		.nav-brand{
+			position: relative;
+			display: inline-block;
+
+		}
+		.hide-nav{
+			display: none;
+		}
+
+
+		ul{
+			float: left;
+			margin: 0;
+			display: inline-block;
+
+		}
+
+	}
+}
