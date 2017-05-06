@@ -131,6 +131,27 @@ li {
   margin-top: 50px;
   padding-top: 50px; }
 
+.triptype {
+  width: 115px;
+  font-size: 14px;
+  border: none;
+  height: 34px;
+  background: transparent; }
+
+.triptype-dropdown {
+  width: 115px;
+  height: 34px;
+  /*border: 1px solid #111;*/
+  border-radius: 3px;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center; }
+  .triptype-dropdown:before {
+    font-family: FontAwesome;
+    content: "\f0ec";
+    border: none;
+    width: 35px; }
+
 body {
   background: #f2f2f2; }
 

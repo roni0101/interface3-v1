@@ -38,40 +38,46 @@
 <main id="main-container">
 	
 	
-	<div class="wdw" id="wdw-home">
-		<div class="container">
-			<h2>WELLCOME</h2>
-		</div>
+<div class="wdw" id="wdw-home">
+	<div class="container">
+		<h2>WELLCOME</h2>
 	</div>
+</div>
 
 
 	<!-- START WDW SEARCH -->
-	<div class="wdw" id="wdw-search">
-		<div class="container">
-			<h2>SEARCH FLYIGHTS</h2>
+<div class="wdw" id="wdw-search">
+	<div class="container">
+		<h2>SEARCH FLYIGHTS</h2>
 
-		    <form class="flex-form form">
-		      <div class="first-row">
-		        <input type="search" placeholder="Departure airport">
-		      	<input type="search" placeholder="Arrival airport" >
-		     </div> 
-		      <div class="second-row">
-		      	<label for="from">From</label>
-		      	<input type="date" name="from">
-		      	<label for="from">To</label>
-		      	<input type="date" name="to">
-		      </div>	  
-		      <div class="third-row">
-		      	<i  for="passangers" class="fa fa-user" aria-hidden="true"></i>
-		      	<input type="number" min="1" max="10" value="1" name="passangers">
-		      </div>
-		      <div class="row">
-		      	<button class="btn btn-primary">SEARCH</button>
-		      </div>
-		    </form>
+	    <form class="flex-form form">
+	      <div class="first-row">
+	        <input type="search" placeholder="Departure airport">
+	      	<input type="search" placeholder="Arrival airport" >
+	     </div> 
+	      <div class="second-row">
+	      	<label for="from">From</label>
+	      	<input type="date" name="from">
+	      	<label for="from">To</label>
+	      	<input type="date" name="to">
+	      </div>	  
+	      <div class="third-row">
+	      		<div class="triptype-dropdown">
+		      		<select class="triptype">
+			      		<option value="return">one way trip</option>
+				      	<option value="return">return trip</option>
+			      	</select>
+	      	</div>
+	      	<input id="passanger" size="initial-scale" type="number" min="1" max="10" value="1">
+	      	
+	      </div>
+	      <div class="row">
+	      	<button class="btn btn-primary">SEARCH</button>
+	      </div>
+	    </form>
 
-	    </div>
-	</div>
+    </div>
+</div>
 
 	
 
