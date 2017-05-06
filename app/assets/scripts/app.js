@@ -2,19 +2,22 @@
 
 var app = (function() {
 	
-	var $windows = $(".wdw"),
-		$doc = $(document)
-		$nav = $('.navbar')
-		$navUL = $nav.find('ul')
+	var $doc = $(document),
+		$win = $(window),
+
+		$wdw = $(".wdw"),
+
+		$nav = $('.navbar'),
+		$navUL = $nav.find('ul'),
 		$navAnchors = $navUL.find('a');
 
 
 
-	function _hideShowNav(){
-		$navUL.toggle('blind', 300);
+	function _hideShowNav(){	
+		if( window.innerWidth < 901){
+			$navUL.toggle('blind', 300);
+		}
 	}
-
-
 
 
 	// To use this function
@@ -42,15 +45,19 @@ var app = (function() {
 		$newActiveAnchor.addClass('active');
 
 		var  windowToShow = "#wdw-" + wdwName;
-		$windows.hide();
+		$wdw.hide();
 		$(windowToShow).show();
 	}
 
 
 	// Event listeners
-	$doc
-		.on('click', '.btn-switch', switchWindow)
-		.on('click', ".hide-nav i", _hideShowNav);
+	$doc.on('click', '.btn-switch', switchWindow);
+	$doc.on('click', $navAnchors, _hideShowNav);
+	$win.on('resize', function () {
+		if( window.innerWidth > 900){
+			$navUL.show();
+		}
+	})
 
 
 

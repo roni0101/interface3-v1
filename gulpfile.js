@@ -4,6 +4,7 @@ var gulp = require('gulp'),
 
 gulp.task('watch', ['browserSync'], function () {
   gulp.watch('app/*.html', browserSync.reload);
+  gulp.watch('app/assets/scripts/**.js', browserSync.reload);
 	
 	gulp.watch('./app/assets/scss/**/*.scss', ['sass']);
 
