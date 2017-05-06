@@ -26,9 +26,9 @@ h2 {
   display: block;
   width: 80%;
   height: auto;
-  min-height: calc(100vh - 200px);
+  min-height: calc(100vh - 300px);
   margin: 100px auto;
-  padding: 50px 0;
+  padding: 50px 0 0 0;
   background-color: white; }
 
 .form {
@@ -179,6 +179,26 @@ footer {
   width: 100%;
   display: block;
   margin-top: 50px; }
+
+.cover {
+  position: relative;
+  width: 100vw;
+  height: auto;
+  background-image: url("../images/bt2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: calc(100vh - 150px);
+  color: white; }
+  .cover .cover-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.6); }
+    .cover .cover-content img {
+      width: 100%; }
 
 .flex-outer li,
 .flex-inner {
