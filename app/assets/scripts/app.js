@@ -61,8 +61,9 @@ var app = (function() {
 	$doc.on('click', '.btn-switch', switchWindow);
 	$doc.on('click', '.navbar ul a', _hideShowNav);
 	$doc.on('click', '.navbar .hide-nav i', _hideShowNav);
-	$win.on('resize', _onWinResize);
 	$doc.on('click', 'form button', _stopFormSubmit);
+	
+	$win.on('resize', _onWinResize);
 
 
 
