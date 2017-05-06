@@ -37,6 +37,26 @@ li {
   .form {
     width: 40%; } }
 
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer; }
+
+.btn-primary {
+  background-color: #009688;
+  color: white; }
+  .btn-primary:hover {
+    background-color: #00695C;
+    color: white; }
+
+.btn-default {
+  background-color: white;
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.2); }
+  .btn-default:hover {
+    background-color: rgba(0, 0, 0, 0.1); }
+
 .navbar {
   position: fixed;
   top: 0;
@@ -88,7 +108,7 @@ li {
         .navbar ul li a {
           padding: 0 10px; }
           .navbar ul li a:hover {
-            background-color: #00796B; } }
+            background-color: #00695C; } }
 
 .wdw {
   display: none; }
