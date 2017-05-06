@@ -12,8 +12,6 @@ $nav-height: 50px;
 	a{
 		color:white;
 	}
-
-
 	.nav-brand, .hide-nav{
 		position: absolute;
 		top:0;
@@ -26,16 +24,26 @@ $nav-height: 50px;
 	}
 	.hide-nav{
 		right: 10%;
+		font-size: 24px;
+		color:white;
+		cursor: pointer;
+
+		i{
+			padding:10px;
+		}
 	}
 
 	ul{
 		position: relative;
 		margin-top: $nav-height;
-
-
+		display: none;
 		li{
 			height: 50px;
-			border-top: 1px solid rgba(255,255,255, 0.1);
+			border-top: 1px solid rgba(255,255,255, 0.2);
+
+			&:first-child{
+				border-top-color:rgba(255,255,255, 0.5);
+			}
 
 			a{
 				width: 100%;
@@ -45,6 +53,10 @@ $nav-height: 50px;
 				justify-content:center;
 				align-items:center;
 				color:white;
+
+				&:hover, &.active{
+					background-color:$d-main-color;
+				}
 			}
 		}
 	}
@@ -69,12 +81,11 @@ $nav-height: 50px;
 			li{
 				display: inline-block;
 				margin-right:20px;
+				border-top:none;
 
 				a{
 					padding: 0 10px;
-					&:hover{
-						background-color:$d-main-color;
-					}
+
 				}
 	
 			}

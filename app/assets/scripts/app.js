@@ -2,10 +2,19 @@
 
 var app = (function() {
 	
+	var $windows = $(".wdw"),
+		$doc = $(document)
+		$nav = $('.navbar')
+		$navUL = $nav.find('ul')
+		$navAnchors = $navUL.find('a');
 
-	
 
-	var windows = $(".wdw");
+
+	function _hideShowNav(){
+		$navUL.toggle('blind', 300);
+	}
+
+
 
 
 	// To use this function
@@ -24,22 +33,39 @@ var app = (function() {
 			argument.preventDefault();
 			wdwName = $(argument.target).attr('data-wdw');
 		}
+
+		var $activeNavAnchor = $navUL.find('.active');
+
+		$activeNavAnchor.removeClass('active');
+
+		$newActiveAnchor = $navUL.find('a[data-wdw= ' + wdwName + ']');
+		$newActiveAnchor.addClass('active');
+
 		var  windowToShow = "#wdw-" + wdwName;
-		windows.hide();
+		$windows.hide();
 		$(windowToShow).show();
 	}
+
+
+	// Event listeners
+	$doc
+		.on('click', '.btn-switch', switchWindow)
+		.on('click', ".hide-nav i", _hideShowNav);
+
+
+
 
 	return {
 			switchWindow:switchWindow
 	}
+
+
 
 })();
 
 
 
 
-// Event listeners
 
-$(document).on('click', '.btn-switch', app.switchWindow);
 
 
