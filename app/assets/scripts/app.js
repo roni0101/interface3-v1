@@ -23,6 +23,9 @@ var app = (function() {
 			$navUL.show();
 		}
 	}
+	function _stopFormSubmit(e) {
+		e.preventDefault();
+	}
 
 	// To use this function
 	// add class btn-switch to an anchor 
@@ -59,6 +62,7 @@ var app = (function() {
 	$doc.on('click', '.navbar ul a', _hideShowNav);
 	$doc.on('click', '.navbar .hide-nav i', _hideShowNav);
 	$win.on('resize', _onWinResize);
+	$doc.on('click', 'form button', _stopFormSubmit);
 
 
 

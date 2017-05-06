@@ -25,7 +25,11 @@ h2 {
 .container {
   display: block;
   width: 80%;
-  margin: auto; }
+  height: auto;
+  min-height: calc(100vh - 100px);
+  margin: 100px auto;
+  padding: 50px 0;
+  background-color: white; }
 
 .form {
   width: 90%;
@@ -146,6 +150,15 @@ h2 {
         .navbar ul li a {
           padding: 0 10px; } }
 
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: #00695C;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .wdw {
   display: none; }
 
@@ -155,8 +168,7 @@ h2 {
 #main-container {
   width: 100%;
   display: block;
-  margin-top: 50px;
-  padding-top: 50px; }
+  margin-top: 50px; }
 
 .flex-outer li,
 .flex-inner {
