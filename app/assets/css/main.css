@@ -12,6 +12,16 @@ ul, li {
 li {
   list-style: none; }
 
+body {
+  background: #F5F5F5;
+  font-family: 'Varela Round', sans-serif; }
+
+* {
+  box-sizing: border-box; }
+
+h2 {
+  text-align: center; }
+
 .container {
   display: block;
   width: 80%;
@@ -19,15 +29,32 @@ li {
 
 .form {
   width: 90%;
+  max-width: 400px;
   display: block;
   margin: auto;
   text-align: center; }
+  .form .form-control {
+    margin-bottom: 20px;
+    width: 100%; }
+  .form .form-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+    .form .form-row .form-control {
+      width: 45%; }
   .form label, .form input {
     text-align: left;
-    width: 80%;
+    width: 100%;
     display: block; }
   .form label {
-    margin-top: 10px; }
+    color: #009688;
+    font-weight: bold; }
+  .form input {
+    line-height: 50px;
+    border: 1px solid #4DB6AC;
+    padding-left: 10px; }
+    .form input::placeholder {
+      color: rgba(0, 0, 0, 0.3); }
 
 @media only screen and (min-width: 601px) and (max-width: 901px) {
   .form {
@@ -64,7 +91,7 @@ li {
   width: 100%;
   height: auto;
   min-height: 50px;
-  background-color: #009688; }
+  background-color: #00695C; }
   .navbar a {
     color: white; }
   .navbar .nav-brand, .navbar .hide-nav {
@@ -100,7 +127,7 @@ li {
         align-items: center;
         color: white; }
         .navbar ul li a:hover, .navbar ul li a.active {
-          background-color: #00695C; }
+          background-color: rgba(0, 0, 0, 0.2); }
 
 @media only screen and (min-width: 901px) {
   .navbar {
@@ -130,9 +157,6 @@ li {
   display: block;
   margin-top: 50px;
   padding-top: 50px; }
-
-body {
-  background: #f2f2f2; }
 
 .flex-outer li,
 .flex-inner {
