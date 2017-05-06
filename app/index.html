@@ -11,6 +11,7 @@
 	<!-- FONT AWSOME -->
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
+	<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
 
@@ -27,6 +28,8 @@
 	<ul>
 		<li><a class="btn-switch active" data-wdw="home" href="#">Home</a></li>
 		<li><a class="btn-switch" data-wdw="search" href="#">Search</a></li>
+		<li><a class="btn-switch" data-wdw="results" href="#">Results</a></li>
+		<li><a class="btn-switch" data-wdw="payment" href="#">Payment</a></li>
 		<li><a class="btn-switch" data-wdw="register" href="#">Register</a></li>
 		<li><a class="btn-switch" data-wdw="login" href="#">Login</a></li>
 	</ul>
@@ -38,12 +41,65 @@
 <main id="main-container">
 	
 	
+
 <div class="wdw" id="wdw-home">
 	<div class="container">
 		<h2>WELLCOME</h2>
+
+	<div class="wdw" id="wdw-home">
+
+
+		<div class="cover">
+			<div class="cover-content">
+				<h1>TRAVELWORLD</h1>
+				<p>Your jurney is one step closer</p>
+				<button class="btn btn-primary btn-switch" data-wdw="search">FIND FLIGHT NOW</button>
+			</div>
+		</div>
+		
+	</div>
+
+
+	<!-- START WDW RESULTS -->
+	<div class="wdw" id="wdw-results">
+		<div class="container">
+			<h2>RESULTS</h2>
+		</div>
 	</div>
 </div>
 
+	<!-- START WDW RESULTS -->
+	<div class="wdw" id="wdw-payment">
+		<div class="container">
+			<h2>PAYMENT</h2>
+
+			<form class="form">
+				<div class="form-control">
+					<label for="#card-number">Full name</label>
+					<input type="text" id="card-number" placeholder="Ex. JOHN DOE DOE">
+				</div>	
+				<div class="form-control">
+					<label for="#card-number">Card number</label>
+					<input type="text" id="card-number" placeholder="Ex. 123456789012">
+				</div>
+				<div class="form-row">
+					<div class="form-control">
+						<label for="#exp-date">Expiration date</label>
+						<input type="text" id="exp-date" placeholder="MM/YY">
+					</div>
+
+					<div class="form-control">
+						<label for="#card-number">CVV</label>
+						<input type="text" id="card-number" placeholder="Ex. 123">
+					</div>
+				</div>
+				<div class="form-control">
+					<button class="btn btn-primary">BOOK</button>
+					<button class="btn btn-default">CLEAR</button>
+				</div>
+			</form>
+		</div>
+	</div>
 
 	<!-- START WDW SEARCH -->
 <div class="wdw" id="wdw-search">
@@ -170,7 +226,7 @@
 </main>
 	
 
-
+<!-- <footer>TravelWorld &copy; 2017 All right reserved</footer> -->
 
 
 

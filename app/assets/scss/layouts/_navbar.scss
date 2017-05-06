@@ -7,7 +7,7 @@ $nav-height: 50px;
 	width:100%;
 	height: auto;
 	min-height: $nav-height;
-	background-color: $main-color;
+	background-color: $d-main-color;
 
 	a{
 		color:white;
@@ -55,7 +55,7 @@ $nav-height: 50px;
 				color:white;
 
 				&:hover, &.active{
-					background-color:$d-main-color;
+					background-color:rgba(0,0,0,0.2);
 				}
 			}
 		}

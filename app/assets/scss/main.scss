@@ -13,13 +13,16 @@
 
 
 @import "layouts/navbar";
+@import "layouts/footer";
 @import "layouts/window";
 @import "layouts/main-container";
+<<<<<<< HEAD
 @import "layouts/flight-search";
+=======
+@import "layouts/cover";
 
-body{
-	background: #f2f2f2;
-}
+>>>>>>> c5b1612744499603044caf303f8766599884ed43
+
 
 .flex-outer li,
 .flex-inner

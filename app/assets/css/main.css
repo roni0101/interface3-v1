@@ -12,30 +12,71 @@ ul, li {
 li {
   list-style: none; }
 
+body {
+  background: #F5F5F5;
+  font-family: 'Varela Round', sans-serif; }
+
+* {
+  box-sizing: border-box; }
+
+h2 {
+  text-align: center; }
+
 .container {
   display: block;
   width: 80%;
-  margin: auto; }
+  height: auto;
+  min-height: calc(100vh - 300px);
+  margin: 100px auto;
+  padding: 50px 0 0 0;
+  background-color: white; }
 
 .form {
   width: 90%;
+  max-width: 300px;
   display: block;
   margin: auto;
   text-align: center; }
+  .form .form-control {
+    margin-bottom: 20px;
+    width: 100%; }
+  .form .form-row {
+    width: 100%; }
+    .form .form-row .form-control {
+      width: 100%; }
   .form label, .form input {
     text-align: left;
-    width: 80%;
+    width: 100%;
     display: block; }
   .form label {
-    margin-top: 10px; }
+    color: #009688;
+    font-weight: bold; }
+  .form input {
+    line-height: 50px;
+    border: 1px solid #4DB6AC;
+    padding-left: 10px; }
+    .form input::placeholder {
+      color: rgba(0, 0, 0, 0.3); }
 
 @media only screen and (min-width: 601px) and (max-width: 901px) {
   .form {
-    width: 60%; } }
+    width: 60%; }
+    .form .form-row {
+      width: 100%;
+      display: flex;
+      justify-content: space-between; }
+      .form .form-row .form-control {
+        width: 48%; } }
 
 @media only screen and (min-width: 901px) {
   .form {
-    width: 40%; } }
+    width: 40%; }
+    .form .form-row {
+      width: 100%;
+      display: flex;
+      justify-content: space-between; }
+      .form .form-row .form-control {
+        width: 48%; } }
 
 .btn {
   padding: 10px 20px;
@@ -64,7 +105,7 @@ li {
   width: 100%;
   height: auto;
   min-height: 50px;
-  background-color: #009688; }
+  background-color: #00695C; }
   .navbar a {
     color: white; }
   .navbar .nav-brand, .navbar .hide-nav {
@@ -100,7 +141,7 @@ li {
         align-items: center;
         color: white; }
         .navbar ul li a:hover, .navbar ul li a.active {
-          background-color: #00695C; }
+          background-color: rgba(0, 0, 0, 0.2); }
 
 @media only screen and (min-width: 901px) {
   .navbar {
@@ -119,6 +160,15 @@ li {
         .navbar ul li a {
           padding: 0 10px; } }
 
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: #00695C;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .wdw {
   display: none; }
 
@@ -128,9 +178,9 @@ li {
 #main-container {
   width: 100%;
   display: block;
-  margin-top: 50px;
-  padding-top: 50px; }
+  margin-top: 50px; }
 
+<<<<<<< HEAD
 .triptype {
   width: 115px;
   font-size: 14px;
@@ -154,6 +204,27 @@ li {
 
 body {
   background: #f2f2f2; }
+=======
+.cover {
+  position: relative;
+  width: 100vw;
+  height: auto;
+  background-image: url("../images/bt2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: calc(100vh - 150px);
+  color: white; }
+  .cover .cover-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.6); }
+    .cover .cover-content img {
+      width: 100%; }
+>>>>>>> c5b1612744499603044caf303f8766599884ed43
 
 .flex-outer li,
 .flex-inner {
