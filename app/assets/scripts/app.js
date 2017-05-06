@@ -9,7 +9,7 @@ var app = (function() {
 
 		$nav = $('.navbar'),
 		$navUL = $nav.find('ul'),
-		$navAnchors = $navUL.find('a');
+		$navAnchors = $navUL.find('li>a');
 
 
 
@@ -18,7 +18,11 @@ var app = (function() {
 			$navUL.toggle('blind', 300);
 		}
 	}
-
+	function _onWinResize() {
+		if( window.innerWidth > 900){
+			$navUL.show();
+		}
+	}
 
 	// To use this function
 	// add class btn-switch to an anchor 
@@ -52,12 +56,9 @@ var app = (function() {
 
 	// Event listeners
 	$doc.on('click', '.btn-switch', switchWindow);
-	$doc.on('click', $navAnchors, _hideShowNav);
-	$win.on('resize', function () {
-		if( window.innerWidth > 900){
-			$navUL.show();
-		}
-	})
+	$doc.on('click', '.navbar ul a', _hideShowNav);
+	$doc.on('click', '.navbar .hide-nav i', _hideShowNav);
+	$win.on('resize', _onWinResize);
 
 
 
