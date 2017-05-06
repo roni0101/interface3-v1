@@ -180,7 +180,6 @@ footer {
   display: block;
   margin-top: 50px; }
 
-<<<<<<< HEAD
 .triptype {
   width: 115px;
   font-size: 14px;
@@ -202,9 +201,6 @@ footer {
     border: none;
     width: 35px; }
 
-body {
-  background: #f2f2f2; }
-=======
 .cover {
   position: relative;
   width: 100vw;
@@ -224,7 +220,6 @@ body {
     background-color: rgba(0, 0, 0, 0.6); }
     .cover .cover-content img {
       width: 100%; }
->>>>>>> c5b1612744499603044caf303f8766599884ed43
 
 .flex-outer li,
 .flex-inner {
