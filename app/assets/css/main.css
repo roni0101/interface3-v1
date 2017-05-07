@@ -172,7 +172,7 @@ footer {
 .wdw {
   display: none; }
 
-#wdw-home {
+#wdw-confirm {
   display: block; }
 
 #main-container {
@@ -244,6 +244,26 @@ footer {
     background-color: rgba(0, 0, 0, 0.6); }
     .cover .cover-content img {
       width: 100%; }
+
+.confirm-section {
+  width: 90%;
+  display: block;
+  margin: auto; }
+  .confirm-section .data-row {
+    border: 1px solid #009688;
+    padding: 10px; }
+  .confirm-section .main-data {
+    display: flex; }
+    .confirm-section .main-data .data {
+      height: auto;
+      min-height: 50px;
+      margin-bottom: 25px;
+      font-weight: bold; }
+      .confirm-section .main-data .data span {
+        margin-left: 5px; }
+    .confirm-section .main-data img {
+      height: 100px;
+      margin-right: 5px; }
 
 .flex-outer li,
 .flex-inner {

@@ -1,0 +1,31 @@
+.confirm-section{
+	width:90%;
+	display:block;
+	margin:auto;
+
+	.data-row{
+		border:1px solid $main-color;
+		padding: 10px;
+	}
+
+	.main-data{
+		display: flex;
+
+		.data{
+			height: auto;
+			min-height: 50px;
+			margin-bottom:25px;
+			font-weight: bold;
+
+			span{
+				margin-left:5px;
+			}
+		}
+
+		img{
+			height: 100px;
+			margin-right:5px;
+		}
+
+	}
+}
