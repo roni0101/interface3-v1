@@ -180,12 +180,25 @@ footer {
   display: block;
   margin-top: 50px; }
 
-.triptype {
-  width: 115px;
-  font-size: 14px;
-  border: none;
-  height: 34px;
-  background: transparent; }
+.from, .to {
+  display: flex; }
+  .from:before, .to:before {
+    font-family: FontAwesome;
+    content: "\f197";
+    width: 35px;
+    align-items: center;
+    font-size: 1.5em;
+    color: #009688; }
+
+.to:before {
+  -webkit-transform: rotate(180deg);
+  margin-bottom: 15px; }
+
+.from:before {
+  margin-top: 15px; }
+
+.third-row {
+  display: flex; }
 
 .triptype-dropdown {
   width: 115px;
@@ -199,7 +212,18 @@ footer {
     font-family: FontAwesome;
     content: "\f0ec";
     border: none;
-    width: 35px; }
+    width: 35px;
+    color: #009688; }
+
+.triptype {
+  width: 115px;
+  font-size: 14px;
+  border: none;
+  height: 34px;
+  background: transparent; }
+
+#passanger {
+  width: 100px; }
 
 .cover {
   position: relative;

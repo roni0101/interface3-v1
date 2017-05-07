@@ -102,17 +102,31 @@
 	</div>
 
 	<!-- START WDW SEARCH -->
-<div class="wdw" id="wdw-search">
+<div class="wdw1" id="wdw-search">
 	<div class="container">
 		<h2>SEARCH FLYIGHTS</h2>
 
 	    <form class="flex-form form">
-	      <div class="first-row">
-	        <input type="search" placeholder="Departure airport">
-	      	<input type="search" placeholder="Arrival airport" >
+	      <div class="first-row ">
+	      <ul>
+	      	<li >
+	      		<div class="from">
+	      			<input  type="search" placeholder="Departure airport" >
+	      		</div>
+	      		
+	      	</li>
+	      	<li>
+	      		<div class="to">
+	      			<input type="search" placeholder="Arrival airport" >
+	      		</div>
+	      		
+	      	</li>
+	      </ul>
+	        
+	      	
 	     </div> 
 	      <div class="second-row">
-	      	<label for="from">From</label>
+	      	<label for="from"> From</label>
 	      	<input type="date" name="from">
 	      	<label for="from">To</label>
 	      	<input type="date" name="to">
@@ -123,9 +137,10 @@
 			      		<option value="return">one way trip</option>
 				      	<option value="return">return trip</option>
 			      	</select>
-	      	</div>
-	      	<input id="passanger" size="initial-scale" type="number" min="1" max="10" value="1">
-	      	
+	      		</div>
+		      	<div>
+		      		<input id="passanger" size="initial-scale" type="number" min="1" max="10" value="1">
+		      	</div>      	
 	      </div>
 	      <div class="row">
 	      	<button class="btn btn-primary">SEARCH</button>
