@@ -11,7 +11,9 @@ var app = (function() {
 		$navUL = $nav.find('ul'),
 		$navAnchors = $navUL.find('li>a');
 
-
+	var datefield = document.createElement("input");
+    	datefield.setAttribute("type", "date");
+    	
 
 	function _hideShowNav(){	
 		if( window.innerWidth < 901){
@@ -56,12 +58,28 @@ var app = (function() {
 		$(windowToShow).show();
 	}
 
+	//if browser doesn't support input type="date"
+	// initialize date picker widget
+	function addDatePicker(){
+		
+		if (datefield.type != "date"){ 
+
+			$("#from").datepicker();
+	      	$("#to").datepicker();
+	
+		}
+	}
+	
+	
 
 	// Event listeners
 	$doc.on('click', '.btn-switch', switchWindow);
 	$doc.on('click', '.navbar ul a', _hideShowNav);
 	$doc.on('click', '.navbar .hide-nav i', _hideShowNav);
 	$doc.on('click', 'form button', _stopFormSubmit);
+	$doc.on('click', '#from', addDatePicker);
+	$doc.on('click', '#to', addDatePicker);
+	
 	
 	$win.on('resize', _onWinResize);
 
@@ -72,13 +90,11 @@ var app = (function() {
 			switchWindow:switchWindow
 	}
 
-
+	
 
 })();
 
 
 
-
-
-
+	
 

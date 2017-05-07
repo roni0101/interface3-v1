@@ -13,6 +13,12 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+
+	<!-- DatePicker -->
+	<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+
+
+
 </head>
 
 
@@ -103,13 +109,13 @@
 	      <div class="first-row ">
 	      <ul>
 	      	<li >
-	      		<div class="from">
+	      		<div class="destination-from">
 	      			<input type="search" placeholder="Departure airport" >
 	      		</div>
 	      		
 	      	</li>
 	      	<li>
-	      		<div class="to">
+	      		<div class="destination-to">
 	      			<input type="search" placeholder="Arrival airport" >
 	      		</div>
 	      		
@@ -118,11 +124,16 @@
 	        
 	      	
 	     </div> 
-	      <div class="second-row">
-	      	<label for="from"> From</label>
-	      	<input type="date" name="from">
+	    <div class="second-row">
+		    <label for="from">From</label>
+	      	<div id="date-from">
+	      		<input id="from" type="date" name="from">	
+	      	</div>
 	      	<label for="from">To</label>
-	      	<input type="date" name="to">
+	      	<div id="date-to">
+	      		<input id="to" type="date" name="to">
+	      	</div>
+	      
 	      </div>	  
 	      <div class="third-row">
 	      		<div class="triptype-dropdown">
@@ -235,10 +246,6 @@
 	
 
 <!-- <footer>TravelWorld &copy; 2017 All right reserved</footer> -->
-
-
-
-
 
 
 
