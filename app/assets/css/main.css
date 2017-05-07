@@ -24,12 +24,20 @@ h2 {
 
 .container {
   display: block;
-  width: 80%;
+  width: 90%;
   height: auto;
   min-height: calc(100vh - 300px);
   margin: 100px auto;
   padding: 50px 0 0 0;
   background-color: white; }
+
+@media only screen and (min-width: 601px) and (max-width: 901px) {
+  .container {
+    width: 80%; } }
+
+@media only screen and (min-width: 901px) {
+  .container {
+    width: 80%; } }
 
 .form {
   width: 90%;
@@ -99,6 +107,10 @@ h2 {
   border: 1px solid rgba(0, 0, 0, 0.2); }
   .btn-default:hover {
     background-color: rgba(0, 0, 0, 0.1); }
+
+.icon {
+  width: 20px;
+  height: 20px; }
 
 .navbar {
   position: fixed;
@@ -174,13 +186,25 @@ footer {
 .wdw {
   display: none; }
 
-#wdw-home {
+#wdw-confirm {
   display: block; }
 
 #main-container {
   width: 100%;
   display: block;
   margin-top: 50px; }
+
+.container, .row, .col {
+  display: block; }
+
+.row {
+  margin: 10px auto;
+  padding: 10px; }
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .first-row {
   justify-content: space-between; }
@@ -275,6 +299,42 @@ input[type="date"] {
     background-color: rgba(0, 0, 0, 0.6); }
     .cover .cover-content img {
       width: 100%; }
+
+.confirm-section {
+  width: 90%;
+  display: block;
+  margin: auto; }
+  .confirm-section .data-row {
+    border: 1px solid #009688;
+    margin-bottom: 20px; }
+    .confirm-section .data-row .row {
+      margin-bottom: 0; }
+    .confirm-section .data-row > div {
+      border-top: 1px solid #E0F2F1; }
+  .confirm-section .main-data {
+    display: flex;
+    padding: 10px; }
+    .confirm-section .main-data .data {
+      height: auto;
+      min-height: 50px;
+      font-weight: bold; }
+      .confirm-section .main-data .data:first-child {
+        margin-bottom: 25px; }
+      .confirm-section .main-data .data span {
+        margin-left: 5px; }
+    .confirm-section .main-data img {
+      height: 100px;
+      margin-right: 5px; }
+  .confirm-section .additional-data {
+    padding: 10px;
+    display: flex;
+    flex-direction: column; }
+    .confirm-section .additional-data > div {
+      height: 20px;
+      display: flex;
+      margin-top: 10px; }
+      .confirm-section .additional-data > div img {
+        margin-right: 5px; }
 
 .flex-outer li,
 .flex-inner {
