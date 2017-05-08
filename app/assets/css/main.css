@@ -44,7 +44,7 @@ h2 {
   max-width: 300px;
   display: block;
   margin: auto;
-  text-align: center; }
+  padding: 10px 0; }
   .form .form-control {
     margin-bottom: 20px;
     width: 100%; }
@@ -199,7 +199,7 @@ footer {
 
 .row {
   margin: 10px auto;
-  padding: 10px; }
+  padding: 10px 0; }
 
 .centered {
   display: flex;
