@@ -205,13 +205,35 @@
 	      <ul>
 	      	<li >
 	      		<div class="destination-from">
-	      			<input type="search" placeholder="Departure airport" >
+	      			<select id="Departure">
+	      				<option>Departure City/Airport</option>	      		
+	      				<option>Malmo(mlm)</option>
+						<option>Sofia(sof)</option>
+	      				<option>Kiev(brp)</option>
+	      				<option>Kiev(zhul)</option>
+	      				<option>Stockholm(stk)</option>
+	      				<option>Berlin(brl)</option>
+	      				<option>London(gatwik)</option>
+	      				<option>London(lutton)</option>	      				
+	      				<option>Copenhagen(taastrup)</option>
+	      			</select>
 	      		</div>
 	      		
 	      	</li>
 	      	<li>
 	      		<div class="destination-to">
-	      			<input type="search" placeholder="Arrival airport" >
+	      			<select id="destination">
+	      				<option>Destination City/Airport</option>
+	      				<option>Malmo(mlm)</option>
+						<option>Sofia(sof)</option>
+	      				<option>Kiev(brp)</option>
+	      				<option>Kiev(zhul)</option>
+	      				<option>Stockholm(stk)</option>
+	      				<option>Berlin(brl)</option>
+	      				<option>London(gatwik)</option>
+	      				<option>London(lutton)</option>	      				
+	      				<option>Copenhagen(taastrup)</option>
+	      			</select>
 	      		</div>
 	      		
 	      	</li>
@@ -220,26 +242,31 @@
 	      	
 	     </div> 
 	    <div class="second-row">
-		    <label for="from">From</label>
+		    <!-- <label for="from">From</label> -->
 	      	<div id="date-from">
-	      		<input id="from" type="date" name="from">	
+	      		<input class="fa fa-long-arrow-right" id="from" type="date" name="from">	
 	      	</div>
-	      	<label for="from">To</label>
-	      	<div id="date-to">
-	      		<input id="to" type="date" name="to">
+	      	<!-- <label for="from">To</label> -->
+	      	<div  id="date-to">
+	      		<input class="fa fa-long-arrow-left" id="to" type="date" name="to">
 	      	</div>
+
+	      	<div id="passanger" >
+		      	<input size="initial-scale" type="number" min="1" max="10" value="1">
+		    </div>  
 	      
-	      </div>	  
+	     </div>	  
 	      <div class="third-row">
 	      		<div class="triptype-dropdown">
-		      		<select class="triptype">
-			      		<option value="return">one way trip</option>
+	      		
+	      			<select class="triptype">
+			      		<option value="one-way">one way trip</option>
 				      	<option value="return">return trip</option>
 			      	</select>
+	      
+		      		
 	      		</div>
-		      	<div>
-		      		<input id="passanger" size="initial-scale" type="number" min="1" max="10" value="1">
-		      	</div>      	
+		      	    	
 	      </div>
 	      <div class="row">
 	      	<button class="btn btn-primary">SEARCH</button>
