@@ -1,65 +1,59 @@
-.first-row{
-	justify-content: space-between;
+
+.first-row select{
+	-webkit-appearance: button;
+	-moz-appearance: none;  
+	background: transparent ;
+	width: 265px;
+	border: none;
 }
 
 .destination-from, .destination-to{
 	display: flex;
 	max-width: 300px;
+	height: 50px;
 	border:1px solid $b-main-color;
 	margin-bottom: 15px;
 	&:before{
 		font-family:FontAwesome;
-		content: "\f197" ;
+		content: "\f197" ;  /*fa-space-shuttle*/
 		width: 35px;
 		align-items: center;
 		font-size: 1.5em;
 		color: $main-color;
-
+		margin-top: 10px;
 	}
 }
 
 .destination-to:before{
 		-webkit-transform: rotate(180deg);
-		margin-bottom: 15px;
+		margin-bottom: 10px;
 	}
 
-.destination-from:before{
-	margin-top: 15px;
+.second-row input{
+	border-color: white;
 }
 
-input[type="search"]{
-	border-color: white;
-	
-}
-
-
-
-
-input[type="date"]{
-	border-color: white;
+.second-row input[type="date"]{	
+	background: transparent;
 		&::-webkit-inner-spin-button {
 		display: none;
 		
 	}
-}
-
-	
+}	
 
 #date-from, #date-to{
 	display: flex;
 	max-width: 300px;
 	border:1px solid $b-main-color;
+	margin-bottom: 15px;
 	&:before{
 	  	font-family:FontAwesome;
-		content: "\f073";
-		border: none;
-		width: 35px;
+		content: "\f073"; /*fa fa-calendar*/
+		margin-left: 4px;
 		color: $main-color;
 		font-size: 1.5em;
-		align-content:center;
 		margin-top: 15px;
-
-		}
+	}	
 }
 
 .third-row{
@@ -68,35 +62,47 @@ input[type="date"]{
 
 .triptype-dropdown {
   width: 115px;
-  /*border: 1px solid #111;*/
-  border-radius: 3px;
   overflow: hidden;
   display: inline-flex;
   align-items: center;
-  
-
-	  &:before{
+  	  &:before{
 	  	font-family:FontAwesome;
-		content: "\f0ec";
+		content: "\f0ec"; /*fa-exchange*/
 		border: none;
 		width: 35px;
 		color: $main-color;
 	  }
 	}
 
-.triptype {
-  
+.triptype {  
   width: 90px;
   font-size: 14px;
   border: none;
   height: 34px;
   background: transparent ;
    -webkit-appearance: button;
-   -moz-user-select: none;
-   
+   -moz-appearance: none;   
 }
 
 #passanger{
-	width: 100px;
+	display: flex;
+	max-width: 300px;
+	border:1px solid $b-main-color;
+	margin-bottom: 15px;
+	background: transparent;
+	&:before{
+	  	font-family:FontAwesome;
+		content: "\f21b";  /*fa-user-secret*/
+		border: none;
+		width: 35px;
+		color: $main-color;
+		font-size: 1.5em;
+		align-content:center;
+		margin-top: 15px;
+		display: block;	
+	}	
 }
+
+
+
 

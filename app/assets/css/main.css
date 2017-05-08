@@ -209,6 +209,14 @@ footer {
   justify-content: center;
   align-items: center; }
 
+<<<<<<< HEAD
+.first-row select {
+  -webkit-appearance: button;
+  -moz-appearance: none;
+  background: transparent;
+  width: 265px;
+  border: none; }
+=======
 .flights-list {
   width: 90%;
   display: block;
@@ -265,47 +273,48 @@ footer {
 
 .first-row {
   justify-content: space-between; }
+>>>>>>> 3436dd1326eeb796e0a7fa4c5c5b2cc99b0c0de3
 
 .destination-from, .destination-to {
   display: flex;
   max-width: 300px;
+  height: 50px;
   border: 1px solid #4DB6AC;
   margin-bottom: 15px; }
   .destination-from:before, .destination-to:before {
     font-family: FontAwesome;
     content: "\f197";
+    /*fa-space-shuttle*/
     width: 35px;
     align-items: center;
     font-size: 1.5em;
-    color: #009688; }
+    color: #009688;
+    margin-top: 10px; }
 
 .destination-to:before {
   -webkit-transform: rotate(180deg);
-  margin-bottom: 15px; }
+  margin-bottom: 10px; }
 
-.destination-from:before {
-  margin-top: 15px; }
-
-input[type="search"] {
+.second-row input {
   border-color: white; }
 
-input[type="date"] {
-  border-color: white; }
-  input[type="date"]::-webkit-inner-spin-button {
+.second-row input[type="date"] {
+  background: transparent; }
+  .second-row input[type="date"]::-webkit-inner-spin-button {
     display: none; }
 
 #date-from, #date-to {
   display: flex;
   max-width: 300px;
-  border: 1px solid #4DB6AC; }
+  border: 1px solid #4DB6AC;
+  margin-bottom: 15px; }
   #date-from:before, #date-to:before {
     font-family: FontAwesome;
     content: "\f073";
-    border: none;
-    width: 35px;
+    /*fa fa-calendar*/
+    margin-left: 4px;
     color: #009688;
     font-size: 1.5em;
-    align-content: center;
     margin-top: 15px; }
 
 .third-row {
@@ -313,14 +322,13 @@ input[type="date"] {
 
 .triptype-dropdown {
   width: 115px;
-  /*border: 1px solid #111;*/
-  border-radius: 3px;
   overflow: hidden;
   display: inline-flex;
   align-items: center; }
   .triptype-dropdown:before {
     font-family: FontAwesome;
     content: "\f0ec";
+    /*fa-exchange*/
     border: none;
     width: 35px;
     color: #009688; }
@@ -332,10 +340,25 @@ input[type="date"] {
   height: 34px;
   background: transparent;
   -webkit-appearance: button;
-  -moz-user-select: none; }
+  -moz-appearance: none; }
 
 #passanger {
-  width: 100px; }
+  display: flex;
+  max-width: 300px;
+  border: 1px solid #4DB6AC;
+  margin-bottom: 15px;
+  background: transparent; }
+  #passanger:before {
+    font-family: FontAwesome;
+    content: "\f21b";
+    /*fa-user-secret*/
+    border: none;
+    width: 35px;
+    color: #009688;
+    font-size: 1.5em;
+    align-content: center;
+    margin-top: 15px;
+    display: block; }
 
 .cover {
   position: relative;
