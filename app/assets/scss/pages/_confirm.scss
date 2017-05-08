@@ -56,3 +56,38 @@
 		}
 	}
 }
+
+
+@include respond-to(medium) {
+
+	.confirm-section{
+
+
+		.additional-data{
+			flex-direction:row;
+
+			&>div{
+				margin-right:10px;
+			}
+		}
+
+	}
+
+}
+
+@include respond-to(large) {
+
+	.confirm-section{
+
+
+		.additional-data{
+			flex-direction:row;
+
+			&>div{
+				margin-right:20px;
+			}
+		}
+
+	}
+
+}
