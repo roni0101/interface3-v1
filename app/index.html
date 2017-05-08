@@ -26,7 +26,7 @@
 
 <nav class="navbar">
 	<div class="nav-brand">
-		<a class="btn-switch" data-wdw="home" href="#">BRAND</a>
+		<a class="btn-switch" data-wdw="home" href="#"><i class="fa fa-plane"></i></a>
 	</div>
 	<div class="hide-nav">
 		<span><i class="fa fa-bars" aria-hidden="true"></i></span>
@@ -168,6 +168,8 @@
 			<h2>PAYMENT</h2>
 
 			<form class="form">
+
+
 				<div class="form-control">
 					<label for="#card-number">Full name</label>
 					<input type="text" id="card-number" placeholder="Ex. JOHN DOE DOE">
@@ -176,6 +178,7 @@
 					<label for="#card-number">Card number</label>
 					<input type="text" id="card-number" placeholder="Ex. 123456789012">
 				</div>
+
 				<div class="form-row">
 					<div class="form-control">
 						<label for="#exp-date">Expiration date</label>
@@ -256,35 +259,36 @@
 			<h2>REGISTER</h2>
 			<div class="flex-inner">
 				<form class="form">
-					<ul>
-						<li class="form-control">
-							<label for="firstName" >First Name:</label>
-							<input id="firstName" class="form-control" type="text" placeholder="firstName" required=""/>
+						<div class="form-row">
+							<div class="form-control">
+								<label for="firstName" >First Name:</label>
+								<input id="firstName" type="text" placeholder="firstName" required=""/>
+							</div>
+							<div class="form-control">
+								<label for="lastName" >Last Name:</label>
+								<input id="lastName" type="text" placeholder="lastName" required=""/>
+							</div>	
+						</div>
 
-						</li>
-						<li class="form-control">
-							<label for="lastName" >Last Name:</label>
-							<input id="lastName" type="text" placeholder="lastName" required=""/>
-						</li>
-						<li class="form-control"> 
+						<div class="form-control"> 
 							<label for="email">Email: </label>
 							<input id="email" type="text" placeholder="Email" required=""/>
-						</li>
-						<li class="form-control">
+						</div>
+						<div class="form-control">
 							<label for="password">Password: </label>
 							<input id="password" type="password" placeholder="Password" required=""/>
-						</li>
+						</div>
 						
-						<li class="form-control">
+						<div class="form-control">
 							<label for="comfirmPassword" >Comfirm Password: </label>
 							<input id="comfirmPassword" type="password" placeholder="Comfirm Password" required=""/>
-						</li>
-						<li>
-						<button class="btn btn-primary" id="btnRegister" type="submit">SUBMIT</button>
-						
-						<button class="btn btn-default" id="btnCancel" type="button">CLEAR</button>
-						</li>
-					</ul>
+						</div>
+						<div class="row">
+							<button class="btn btn-primary btn-switch" id="btnRegister" type="submit" data-wdw="register2">SUBMIT</button>
+							<button class="btn btn-default" id="btnCancel" type="button">CLEAR</button>
+						</div>
+
+
 				</form>
 			</div>
 		</div>
@@ -295,37 +299,39 @@
 			<h2>REGISTER</h2>
 			<div class="flex-inner">
 				<form class="form">
-					<ul>
-						<li class="form-control">
+
+
+						<div class="form-control">
 							<label for="" >Company Name: </label>
 							<input id="companyName" type="text" placeholder="companyName" required=""/>
-						</li>
-						<li class="form-control">
+						</div>
+						<div class="form-control">
 							<label for="address">Address: </label>
 							<input id="address" type="text" placeholder="address" required=""/>
-						</li>
-						<li class="form-control">
+						</div>
+						<div class="form-control">
 							<label for="city">City: </label>
 							<input id="city" type="text" placeholder="city" required=""/>
-						</li>
-						<li class="form-control">
+						</div>
+						<div class="form-control">
 							<label for="postNumber">Post Number: </label>
 							<input id="postNumber" type="text" placeholder="postNumber" required=""/>
-						</li>
-						<li class="form-control">
+						</div>
+						<div class="form-control">
 							<label for="phone">Phone: </label>
 							<input id="phone"  type="text" placeholder="Phone" required=""/>
-						</li>
-						<li class="form-control">
+						</div>
+						<div class="form-control">
 							<label for="businessPhone">Business Phone: </label>
 							<input id="businessPhone" type="text" placeholder="Business Phone" required=""/>
-						</li>
-						<li>
-						<button class="btn btn-primary" id="btnRegister" type="submit">SUBMIT</button>
-						
-						<button class="btn btn-default" id="btnCancel" type="button">CLEAR</button>
-						</li>
-					</ul>
+						</div>
+						<div class="row">
+							<button class="btn btn-primary" id="btnRegister" type="submit">SUBMIT</button>
+							<button class="btn btn-default" id="btnCancel" type="button">CLEAR</button>
+						</div>
+
+
+
 				</form>
 			</div>
 		</div>
