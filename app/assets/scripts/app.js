@@ -2,19 +2,22 @@
 
 var app = (function() {
 	
-	var $doc = $(document),
-		$win = $(window),
+	// Cache DOM
+	var $doc = $(document);
+	var $win = $(window);
+	var $wdw = $(".wdw");
 
-		$wdw = $(".wdw"),
+	var	$nav = $('.navbar');
+	var $navUL = $nav.find('ul');
+	var	$navAnchors = $navUL.find('li>a');
 
-		$nav = $('.navbar'),
-		$navUL = $nav.find('ul'),
-		$navAnchors = $navUL.find('li>a');
 
-	var datefield = document.createElement("input");
-    	datefield.setAttribute("type", "date");
-    	
+    // Initialize
+    var datefield = document.createElement("input");
+    datefield.setAttribute("type", "date");
 
+
+    // Private functions
 	function _hideShowNav(){	
 		if( window.innerWidth < 901){
 			$navUL.toggle('blind', 300);

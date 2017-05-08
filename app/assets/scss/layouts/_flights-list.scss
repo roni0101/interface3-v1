@@ -1,0 +1,104 @@
+
+.flights-list{
+	width:90%;
+	display:block;
+	margin:auto;
+
+	.data-row{
+		border:1px solid $main-color;
+		margin-bottom:20px;
+
+		.row{
+			margin-bottom: 0;
+		}
+		
+		&>div{
+			border-top:1px solid $light1-main-color;
+		}
+	}
+
+	.main-data{
+		display: flex;
+		padding: 10px;
+
+		.data{
+			height: auto;
+			min-height: 50px;
+			font-weight: bold;
+			
+			&:first-child {
+				margin-bottom:25px;
+			}
+			span{
+				margin-left:5px;
+			}
+		}
+
+		img{
+			height: 100px;
+			margin-right:5px;
+		}
+
+	}
+
+	.additional-data{
+		padding: 10px;
+		display: flex;
+		flex-direction:column;
+
+		&>div{
+			height: 20px;
+			display: flex;
+			margin-top:10px;
+
+			img{
+				margin-right:5px;
+			}
+		}
+	}
+
+	.price-data{
+		padding:10px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+
+}
+
+
+@include respond-to(medium) {
+
+	.flights-list{
+
+
+		.additional-data{
+			flex-direction:row;
+
+			&>div{
+				margin-right:10px;
+			}
+		}
+
+	}
+
+}
+
+@include respond-to(large) {
+
+	.flights-list{
+
+
+		.additional-data{
+			flex-direction:row;
+
+			&>div{
+				margin-right:20px;
+			}
+		}
+
+	}
+
+}

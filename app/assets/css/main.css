@@ -28,7 +28,7 @@ h2 {
   height: auto;
   min-height: calc(100vh - 300px);
   margin: 100px auto;
-  padding: 50px 0 0 0;
+  padding: 50px 0 10px 0;
   background-color: white; }
 
 @media only screen and (min-width: 601px) and (max-width: 901px) {
@@ -186,7 +186,7 @@ footer {
 .wdw {
   display: none; }
 
-#wdw-home {
+#wdw-results {
   display: block; }
 
 #main-container {
@@ -205,6 +205,60 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center; }
+
+.flights-list {
+  width: 90%;
+  display: block;
+  margin: auto; }
+  .flights-list .data-row {
+    border: 1px solid #009688;
+    margin-bottom: 20px; }
+    .flights-list .data-row .row {
+      margin-bottom: 0; }
+    .flights-list .data-row > div {
+      border-top: 1px solid #E0F2F1; }
+  .flights-list .main-data {
+    display: flex;
+    padding: 10px; }
+    .flights-list .main-data .data {
+      height: auto;
+      min-height: 50px;
+      font-weight: bold; }
+      .flights-list .main-data .data:first-child {
+        margin-bottom: 25px; }
+      .flights-list .main-data .data span {
+        margin-left: 5px; }
+    .flights-list .main-data img {
+      height: 100px;
+      margin-right: 5px; }
+  .flights-list .additional-data {
+    padding: 10px;
+    display: flex;
+    flex-direction: column; }
+    .flights-list .additional-data > div {
+      height: 20px;
+      display: flex;
+      margin-top: 10px; }
+      .flights-list .additional-data > div img {
+        margin-right: 5px; }
+  .flights-list .price-data {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+
+@media only screen and (min-width: 601px) and (max-width: 901px) {
+  .flights-list .additional-data {
+    flex-direction: row; }
+    .flights-list .additional-data > div {
+      margin-right: 10px; } }
+
+@media only screen and (min-width: 901px) {
+  .flights-list .additional-data {
+    flex-direction: row; }
+    .flights-list .additional-data > div {
+      margin-right: 20px; } }
 
 .first-row {
   justify-content: space-between; }

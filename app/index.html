@@ -34,8 +34,6 @@
 	<ul>
 		<li><a class="btn-switch active" data-wdw="home" href="#">Home</a></li>
 		<li><a class="btn-switch" data-wdw="search" href="#">Search</a></li>
-		<li><a class="btn-switch" data-wdw="results" href="#">Results</a></li>
-		<li><a class="btn-switch" data-wdw="confirm" href="#">Confirm</a></li>
 		<li><a class="btn-switch" data-wdw="register" href="#">Register</a></li>
 		<li><a class="btn-switch" data-wdw="login" href="#">Login</a></li>
 	</ul>
@@ -47,6 +45,7 @@
 <main id="main-container">
 	
 
+	<!-- START WDW HOME -->
 	<div class="wdw" id="wdw-home">
 		<div class="cover">
 			<div class="cover-content">
@@ -58,21 +57,149 @@
 	</div>
 
 
-
 	<!-- START WDW RESULTS -->
 	<div class="wdw" id="wdw-results">
 		<div class="container">
 			<h2>RESULTS</h2>
+
+
+			<div class="flights-list">
+
+				<div class="data-row">
+					<div class="main-data">
+						<img src="assets/images/icons/direction.png" alt="direction">
+						<div>
+							<div class="data">
+								<span>15:30</span>
+								<span>2 Octomber</span>
+								<span>Copenhagen</span>
+							</div>
+							<div class="data">
+								<span>17:10</span>
+								<span>2 Octomber</span>
+								<span>Barcelona</span>
+							</div>
+						</div>	
+					</div>
+					<div class="additional-data">
+						<div>
+							<img class="icon" src="assets/images/icons/time.png" alt="Time">
+							<span>1h 25min</span>
+						</div>
+						<div>
+							<img class="icon" src="assets/images/icons/time.png" alt="Time">
+							<span>1h 25min</span>
+						</div>
+						<div>
+							<img class="icon" src="assets/images/icons/time.png" alt="Time">
+							<span>1h 25min</span>
+						</div>
+						<div>
+							<img class="icon" src="assets/images/icons/time.png" alt="Time">
+							<span>1h 25min</span>
+						</div>
+					</div>
+					<div class="price-data">
+						<strong>504.00 DKK</strong>
+						<button class="btn btn-primary btn-switch" data-wdw="confirm">SELECT</button>
+					</div>
+				</div><!-- END data-row -->
+
+
+
+				<div class="data-row">
+					<div class="main-data">
+						<img src="assets/images/icons/direction.png" alt="direction">
+						<div>
+							<div class="data">
+								<span>15:30</span>
+								<span>2 Octomber</span>
+								<span>Copenhagen</span>
+							</div>
+							<div class="data">
+								<span>17:10</span>
+								<span>2 Octomber</span>
+								<span>Barcelona</span>
+							</div>
+						</div>	
+					</div>
+					<div class="additional-data">
+						<div>
+							<img class="icon" src="assets/images/icons/time.png" alt="Time">
+							<span>1h 25min</span>
+						</div>
+						<div>
+							<img class="icon" src="assets/images/icons/time.png" alt="Time">
+							<span>1h 25min</span>
+						</div>
+						<div>
+							<img class="icon" src="assets/images/icons/time.png" alt="Time">
+							<span>1h 25min</span>
+						</div>
+						<div>
+							<img class="icon" src="assets/images/icons/time.png" alt="Time">
+							<span>1h 25min</span>
+						</div>
+					</div>
+					<div class="price-data">
+						<strong>504.00 DKK</strong>
+						<button class="btn btn-primary btn-switch" data-wdw="confirm">SELECT</button>
+					</div>
+				</div><!-- END data-row -->
+
+				<div class="data-row">
+					<div class="main-data">
+						<img src="assets/images/icons/direction.png" alt="direction">
+						<div>
+							<div class="data">
+								<span>15:30</span>
+								<span>2 Octomber</span>
+								<span>Copenhagen</span>
+							</div>
+							<div class="data">
+								<span>17:10</span>
+								<span>2 Octomber</span>
+								<span>Barcelona</span>
+							</div>
+						</div>	
+					</div>
+					<div class="additional-data">
+						<div>
+							<img class="icon" src="assets/images/icons/time.png" alt="Time">
+							<span>1h 25min</span>
+						</div>
+						<div>
+							<img class="icon" src="assets/images/icons/time.png" alt="Time">
+							<span>1h 25min</span>
+						</div>
+						<div>
+							<img class="icon" src="assets/images/icons/time.png" alt="Time">
+							<span>1h 25min</span>
+						</div>
+						<div>
+							<img class="icon" src="assets/images/icons/time.png" alt="Time">
+							<span>1h 25min</span>
+						</div>
+					</div>
+					<div class="price-data">
+						<strong>504.00 DKK</strong>
+						<button class="btn btn-primary btn-switch" data-wdw="confirm">SELECT</button>
+					</div>
+				</div><!-- END data-row -->
+
+			</div>
 		</div>
 	</div>
 
 
+
+	<!-- START WDW CONFIRM -->
 	<div class="wdw" id="wdw-confirm">
 		
 		<div class="container">
 			<h2>CONFIRM</h2>
 
-			<div class="confirm-section">
+			<div class="flights-list">
 				
 				<div class="data-row">
 					<div class="main-data">
@@ -108,7 +235,7 @@
 							<span>1h 25min</span>
 						</div>
 					</div>
-					<div class="row centered"><strong>504.00 DKK</strong></div>
+					<div class="price-data"><strong>504.00 DKK</strong></div>
 				</div><!-- END data-row -->
 
 
@@ -146,7 +273,7 @@
 							<span>1h 25min</span>
 						</div>
 					</div>
-					<div class="row centered"><strong>504.00 DKK</strong></div>
+					<div class="price-data"><strong>504.00 DKK</strong></div>
 				</div><!-- END data-row -->
 
 				<div class="row">
@@ -199,61 +326,60 @@
 	</div>
 
 	<!-- START WDW SEARCH -->
-<div class="wdw" id="wdw-search">
-	<div class="container">
-		<h2>SEARCH FLYIGHTS</h2>
+	<div class="wdw" id="wdw-search">
+		<div class="container">
+			<h2>SEARCH FLYIGHTS</h2>
 
-	    <form class="flex-form form">
-	      <div class="first-row ">
-	      <ul>
-	      	<li >
-	      		<div class="destination-from">
-	      			<input type="search" placeholder="Departure airport" >
-	      		</div>
-	      		
-	      	</li>
-	      	<li>
-	      		<div class="destination-to">
-	      			<input type="search" placeholder="Arrival airport" >
-	      		</div>
-	      		
-	      	</li>
-	      </ul>
-	        
-	      	
-	     </div> 
-	    <div class="second-row">
-		    <label for="from">From</label>
-	      	<div id="date-from">
-	      		<input id="from" type="date" name="from">	
-	      	</div>
-	      	<label for="from">To</label>
-	      	<div id="date-to">
-	      		<input id="to" type="date" name="to">
-	      	</div>
-	      
-	      </div>	  
-	      <div class="third-row">
-	      		<div class="triptype-dropdown">
-		      		<select class="triptype">
-			      		<option value="return">one way trip</option>
-				      	<option value="return">return trip</option>
-			      	</select>
-	      		</div>
-		      	<div>
-		      		<input id="passanger" size="initial-scale" type="number" min="1" max="10" value="1">
-		      	</div>      	
-	      </div>
-	      <div class="row">
-	      	<button class="btn btn-primary">SEARCH</button>
-	      </div>
-	    </form>
+		    <form class="flex-form form">
+		      <div class="first-row ">
+		      <ul>
+		      	<li >
+		      		<div class="destination-from">
+		      			<input type="search" placeholder="Departure airport" >
+		      		</div>
+		      		
+		      	</li>
+		      	<li>
+		      		<div class="destination-to">
+		      			<input type="search" placeholder="Arrival airport" >
+		      		</div>
+		      		
+		      	</li>
+		      </ul>
+		        
+		      	
+		     </div> 
+		    <div class="second-row">
+			    <label for="from">From</label>
+		      	<div id="date-from">
+		      		<input id="from" type="date" name="from">	
+		      	</div>
+		      	<label for="from">To</label>
+		      	<div id="date-to">
+		      		<input id="to" type="date" name="to">
+		      	</div>
+		      
+		      </div>	  
+		      <div class="third-row">
+		      		<div class="triptype-dropdown">
+			      		<select class="triptype">
+				      		<option value="return">one way trip</option>
+					      	<option value="return">return trip</option>
+				      	</select>
+		      		</div>
+			      	<div>
+			      		<input id="passanger" size="initial-scale" type="number" min="1" max="10" value="1">
+			      	</div>      	
+		      </div>
+		      <div class="row">
+		      	<button class="btn btn-primary btn-switch" data-wdw="results">SEARCH</button>
+		      </div>
+		    </form>
 
-    </div>
-</div>
-
+	    </div>
+	</div>
 	
-
+	<!-- START WDW REGISTER -->
 	<div class="wdw" id="wdw-register">
 		<div class="container">
 			<h2>REGISTER</h2>
@@ -294,6 +420,7 @@
 		</div>
 	</div>
 
+	<!-- START WDW REGISTER2 -->
 	<div class="wdw" id="wdw-register2">
 		<div class="container">
 			<h2>REGISTER</h2>
@@ -343,7 +470,7 @@
 		</div>
 	</div>
 	
-
+	<!-- START WDW LOGIN -->
 	<div class="wdw" id="wdw-login">
 		<div class="container">
 			<div class="flex-outer">
@@ -371,8 +498,6 @@
 	
 
 <!-- <footer>TravelWorld &copy; 2017 All right reserved</footer> -->
-
-
 
 
 	<!-- jQuery -->
