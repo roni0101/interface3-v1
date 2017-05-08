@@ -347,18 +347,3 @@ input[type="date"] {
     flex-direction: row; }
     .confirm-section .additional-data > div {
       margin-right: 20px; } }
-
-.flex-outer li,
-.flex-inner {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center; }
-
-.flex-outer > li >,
-.flex-outer li p {
-  flex: 1 0 120px;
-  max-width: 220px; }
-
-.flex-outer > li > label + *,
-.flex-inner {
-  flex: 1 0 120px; }
