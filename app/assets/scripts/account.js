@@ -43,6 +43,7 @@ var Account = (function () {
         account.bphone = bphone;
 
         _store();
+        App.switchWindow('login');
     }
 
     // storing input from register-form
