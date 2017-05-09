@@ -96,6 +96,7 @@ var app = (function() {
 	$doc.on('click', 'form button', _stopFormSubmit);
 	$doc.on('click', '#from', addDatePicker);
 	$doc.on('click', '#to', addDatePicker);
+	$doc.on('click', '#btnLogin', Account.login);
 	
 	
 	$win.on('resize', _onWinResize);
