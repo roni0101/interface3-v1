@@ -1,6 +1,5 @@
 var Account = (function () {
 	
-
     var account = {};
 
 
@@ -37,15 +36,15 @@ var Account = (function () {
         var storedPassword = localStorage.getItem('password');
 
         // entered data from the login-form
-        var userEmail = document.getElementById('userEmail');
-        var userPassword = document.getElementById('userPassword');
+        var userEmail = document.getElementById('email');
+        var userPassword = document.getElementById('password');
 
         // check if stored data from register-form is equal to data from login form
         if(userEmail.value !== storedEmail || userPassword.value !== storedPassword) 
-    	{
+        {
             alert('ERROR');
         }else 
-    	{
+        {
             alert('You are loged in.');
         }
     }
@@ -56,6 +55,5 @@ var Account = (function () {
         login:check,
         register:store
     }
-
 
 })();
