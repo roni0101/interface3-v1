@@ -58,9 +58,11 @@ var Account = (function () {
     {
 
         // stored data from the register-form
-        var lsAccount = JSON.parse("account");
+        var lsAccount = JSON.parse( localStorage.account );
+        console.log(lsAccount);
+
         var storedEmail = lsAccount.email;
-        var storedPassword = lsAccoun.password;
+        var storedPassword = lsAccount.password;
 
         // entered data from the login-form
         var userEmail = document.getElementById('email');
