@@ -206,14 +206,6 @@ footer {
   justify-content: center;
   align-items: center; }
 
-<<<<<<< HEAD
-.first-row select {
-  -webkit-appearance: button;
-  -moz-appearance: none;
-  background: transparent;
-  width: 265px;
-  border: none; }
-=======
 .flights-list {
   width: 90%;
   display: block;
@@ -268,9 +260,19 @@ footer {
     .flights-list .additional-data > div {
       margin-right: 20px; } }
 
-.first-row {
-  justify-content: space-between; }
->>>>>>> 3436dd1326eeb796e0a7fa4c5c5b2cc99b0c0de3
+.search-form {
+  width: 90%;
+  display: block;
+  margin: auto;
+  padding: 10px 0; }
+  .search-form input {
+    height: 50px; }
+
+.first-row-mb select {
+  -webkit-appearance: button;
+  -moz-appearance: none;
+  width: 265px;
+  border: none; }
 
 .destination-from, .destination-to {
   display: flex;
@@ -292,13 +294,8 @@ footer {
   -webkit-transform: rotate(180deg);
   margin-bottom: 10px; }
 
-.second-row input {
-  border-color: white; }
-
-.second-row input[type="date"] {
-  background: transparent; }
-  .second-row input[type="date"]::-webkit-inner-spin-button {
-    display: none; }
+.second-row-mb input {
+  border: none; }
 
 #date-from, #date-to {
   display: flex;
@@ -309,16 +306,46 @@ footer {
     font-family: FontAwesome;
     content: "\f073";
     /*fa fa-calendar*/
+    margin: 10px 4px;
+    color: #009688;
+    font-size: 1.5em; }
+
+.second-row-mb input[type="date"] {
+  background: transparent;
+  width: 265px;
+  border: none; }
+  .second-row-mb input[type="date"]::-webkit-inner-spin-button {
+    display: none; }
+
+.third-row-mb {
+  display: flex;
+  min-width: 300px; }
+  .third-row-mb .passanger-input {
     margin-left: 4px;
+    border: none;
+    background: transparent;
+    width: 50px; }
+
+#passanger {
+  display: flex;
+  max-width: 300px;
+  border: 1px solid #4DB6AC;
+  margin-right: 10px; }
+  #passanger:before {
+    font-family: FontAwesome;
+    content: "\f21b";
+    /*fa-user-secret*/
+    width: 35px;
     color: #009688;
     font-size: 1.5em;
-    margin-top: 15px; }
-
-.third-row {
-  display: flex; }
+    margin: 15px 4px;
+    /*align-content:center;*/
+    /*margin-top: 15px;*/
+    /*display: block;*/
+    /*margin-left: 4px;	*/ }
 
 .triptype-dropdown {
-  width: 115px;
+  width: 50em;
   overflow: hidden;
   display: inline-flex;
   align-items: center; }
@@ -331,31 +358,21 @@ footer {
     color: #009688; }
 
 .triptype {
-  width: 90px;
   font-size: 14px;
   border: none;
-  height: 34px;
-  background: transparent;
+  height: 50px;
   -webkit-appearance: button;
   -moz-appearance: none; }
 
-#passanger {
-  display: flex;
-  max-width: 300px;
-  border: 1px solid #4DB6AC;
-  margin-bottom: 15px;
-  background: transparent; }
-  #passanger:before {
-    font-family: FontAwesome;
-    content: "\f21b";
-    /*fa-user-secret*/
-    border: none;
-    width: 35px;
-    color: #009688;
-    font-size: 1.5em;
-    align-content: center;
-    margin-top: 15px;
-    display: block; }
+@media only screen and (min-width: 601px) and (max-width: 901px) {
+  #first-row-lg, .first-row-mb, .second-row-mb {
+    display: flex;
+    align-items: center; } }
+
+@media only screen and (min-width: 901px) {
+  .first-row-lg, .first-row-mb, .second-row-mb {
+    display: flex;
+    align-items: center; } }
 
 .cover {
   position: relative;

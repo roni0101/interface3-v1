@@ -329,11 +329,13 @@
 <div class="wdw" id="wdw-search">
 	<div class="container">
 		<h2>SEARCH FLYIGHTS</h2>
+			<!-- class="flex-form form" -->
+		<form class="search-form">
 
-	    <form class="flex-form form">
-	      <div class="first-row ">
-	      <ul>
-	      	<li >
+			<div class="first-row-lg">
+				
+				<div class="first-row-mb ">
+	   
 	      		<div class="destination-from">
 	      			<select id="Departure">
 	      				<option>Departure City/Airport</option>	      		
@@ -349,8 +351,7 @@
 	      			</select>
 	      		</div>
 	      		
-	      	</li>
-	      	<li>
+	      
 	      		<div class="destination-to">
 	      			<select id="destination">
 	      				<option>Destination City/Airport</option>
@@ -364,14 +365,10 @@
 	      				<option>London(lutton)</option>	      				
 	      				<option>Copenhagen(taastrup)</option>
 	      			</select>
-	      		</div>
-	      		
-	      	</li>
-	      </ul>
-	        
+	      		</div>	        
 	      	
 	     </div> 
-	    <div class="second-row">
+	    <div class="second-row-mb">
 		    <!-- <label for="from">From</label> -->
 	      	<div id="date-from">
 	      		<input class="fa fa-long-arrow-right" id="from" type="date" name="from">	
@@ -379,28 +376,28 @@
 	      	<!-- <label for="from">To</label> -->
 	      	<div  id="date-to">
 	      		<input class="fa fa-long-arrow-left" id="to" type="date" name="to">
-	      	</div>
-
-	      	<div id="passanger" >
-		      	<input size="initial-scale" type="number" min="1" max="10" value="1">
-		    </div>  
+	      	</div> 
 	      
-	     </div>	  
-	      <div class="third-row">
-	      		<div class="triptype-dropdown">
-	      		
-	      			<select class="triptype">
-			      		<option value="one-way">one way trip</option>
-				      	<option value="return">return trip</option>
-			      	</select>
+		     </div>	  
+			</div>
 	      
-		      		
-	      		</div>
-		      	    	
-	      </div>
-	      <div class="row">
-	      	<button class="btn btn-primary">SEARCH</button>
-	      </div>
+		      <div class="third-row-mb">
+		      		<div id="passanger" >
+		      				<input class="passanger-input" size="initial-scale" type="number" min="1" max="10" value="1">
+		   	 		</div> 
+			      	    	
+		      		<div class="triptype-dropdown">		      			
+		      			<div>
+		      				<select class="triptype">
+					      		<option value="one-way">one way trip</option>
+						      	<option value="return">return trip</option>
+				      		</select>
+		      			</div>		      		
+		      		</div>		      		
+		      </div>
+		      <div class="row">
+		      	<button class="btn btn-primary">SEARCH</button>
+		      </div>
 	    </form>
 
     </div>
