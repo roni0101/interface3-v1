@@ -71,26 +71,31 @@
 
 .third-row-mb{
 	display: flex;
-	
+	flex-flow: last-wrap;
 	height: 50px;
+	width: auto;
 	.passanger-input{
-		margin-left:4px;
+		width: 30px;
 		border:none;
 		background: transparent;
-		width: 50px;
+		
 	}
+}
+
+.third-row-mb button{
+
 }
 
 #passanger{
 	display: flex;
-	max-width: 300px;
+	width: 70px;
 	border:1px solid $b-main-color;		
-	margin-right: 10px;	
+	margin-right: 5px;	
 	height: 50px;
 	&:before{
 	  	font-family:FontAwesome;
 		content: "\f21b";  /*fa-user-secret*/	
-		width: 35px;
+		
 		color: $main-color;
 		font-size: 1.5em;
 		margin: 15px 4px;

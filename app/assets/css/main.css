@@ -322,24 +322,24 @@ footer {
 
 .third-row-mb {
   display: flex;
-  height: 50px; }
+  flex-flow: last-wrap;
+  height: 50px;
+  width: auto; }
   .third-row-mb .passanger-input {
-    margin-left: 4px;
+    width: 30px;
     border: none;
-    background: transparent;
-    width: 50px; }
+    background: transparent; }
 
 #passanger {
   display: flex;
-  max-width: 300px;
+  width: 70px;
   border: 1px solid #4DB6AC;
-  margin-right: 10px;
+  margin-right: 5px;
   height: 50px; }
   #passanger:before {
     font-family: FontAwesome;
     content: "\f21b";
     /*fa-user-secret*/
-    width: 35px;
     color: #009688;
     font-size: 1.5em;
     margin: 15px 4px; }
