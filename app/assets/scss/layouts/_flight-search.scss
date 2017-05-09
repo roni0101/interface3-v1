@@ -122,6 +122,7 @@
 @include respond-to(medium-search) {
 .first-row-mb, .second-row-mb{
 	display: flex;
+	margin-bottom: 20px;
 
 }
  .destination-from, 
@@ -143,7 +144,8 @@
 		align-items: center;
 	}.first-row-mb, .second-row-mb, .third-row-mb,  
 	 	{
-	 	margin: auto;		
+	 	margin:auto;	
+	 	margin-bottom: 20px;		
 	 	display: flex;		
 		width: 540px;
 		}
