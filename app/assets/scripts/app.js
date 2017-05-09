@@ -2,7 +2,9 @@
 
 var app = (function() {
 	
-	// Cache DOM
+
+	// CACHE DOM
+
 	var $doc = $(document);
 	var $win = $(window);
 	var $wdw = $(".wdw");
@@ -12,12 +14,15 @@ var app = (function() {
 	var	$navAnchors = $navUL.find('li>a');
 
 
-    // Initialize
+    // INITIALIZE
+
     var datefield = document.createElement("input");
     datefield.setAttribute("type", "date");
 
 
-    // Private functions
+
+    // PRIVATE FUNCTIONS
+
 	function _hideShowNav(){	
 		if( window.innerWidth < 901){
 			$navUL.toggle('blind', 300);
@@ -32,6 +37,11 @@ var app = (function() {
 		e.preventDefault();
 	}
 
+
+	// PUBLIC FUNCTIONS
+
+
+	// This func is used to switch the windonw
 	// To use this function
 	// add class btn-switch to an anchor 
 	// add attr data-wdw="name_of_window"
@@ -40,6 +50,8 @@ var app = (function() {
 
 	function switchWindow(argument) {
 
+		window.scrollTo(0, 0);
+		
 		var wdwName = "";
 
 		if( typeof argument === 'string' ){
@@ -61,6 +73,7 @@ var app = (function() {
 		$(windowToShow).show();
 	}
 
+
 	//if browser doesn't support input type="date"
 	// initialize date picker widget
 	function addDatePicker(){
@@ -75,7 +88,8 @@ var app = (function() {
 	
 	
 
-	// Event listeners
+	// EVENT LISTENERS
+
 	$doc.on('click', '.btn-switch', switchWindow);
 	$doc.on('click', '.navbar ul a', _hideShowNav);
 	$doc.on('click', '.navbar .hide-nav i', _hideShowNav);
@@ -88,13 +102,9 @@ var app = (function() {
 
 
 
-
 	return {
 			switchWindow:switchWindow
 	}
-
-	
-
 })();
 
 
