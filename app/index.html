@@ -106,6 +106,86 @@
 					</div>
 				</div><!-- END data-row -->
 
+				<div class="data-row">
+					<div class="main-data">
+						<img src="assets/images/icons/direction.png" alt="direction">
+						<div>
+							<div class="data">
+								<span>15:30</span>
+								<span>2 Octomber</span>
+								<span>Copenhagen</span>
+							</div>
+							<div class="data">
+								<span>17:10</span>
+								<span>2 Octomber</span>
+								<span>Barcelona</span>
+							</div>
+						</div>	
+					</div>
+					<div class="additional-data">
+						<div>
+							<img class="icon" src="assets/images/icons/time.png" alt="Time">
+							<span>1h 25min</span>
+						</div>
+						<div>
+							<img class="icon" src="assets/images/icons/company.png" alt="Time">
+							<span>Air Berlin</span>
+						</div>
+						<div>
+							<img class="icon" src="assets/images/icons/class.png" alt="Time">
+							<span>Bussines</span>
+						</div>
+						<div>
+							<img class="icon" src="assets/images/icons/number.png" alt="Time">
+							<span>46231</span>
+						</div>
+					</div>
+					<div class="price-data">
+						<strong>504.00 DKK</strong>
+						<button class="btn btn-primary btn-switch" data-wdw="confirm">SELECT</button>
+					</div>
+				</div><!-- END data-row -->
+
+				<div class="data-row">
+					<div class="main-data">
+						<img src="assets/images/icons/direction.png" alt="direction">
+						<div>
+							<div class="data">
+								<span>15:30</span>
+								<span>2 Octomber</span>
+								<span>Copenhagen</span>
+							</div>
+							<div class="data">
+								<span>17:10</span>
+								<span>2 Octomber</span>
+								<span>Barcelona</span>
+							</div>
+						</div>	
+					</div>
+					<div class="additional-data">
+						<div>
+							<img class="icon" src="assets/images/icons/time.png" alt="Time">
+							<span>1h 25min</span>
+						</div>
+						<div>
+							<img class="icon" src="assets/images/icons/company.png" alt="Time">
+							<span>Air Berlin</span>
+						</div>
+						<div>
+							<img class="icon" src="assets/images/icons/class.png" alt="Time">
+							<span>Bussines</span>
+						</div>
+						<div>
+							<img class="icon" src="assets/images/icons/number.png" alt="Time">
+							<span>46231</span>
+						</div>
+					</div>
+					<div class="price-data">
+						<strong>504.00 DKK</strong>
+						<button class="btn btn-primary btn-switch" data-wdw="confirm">SELECT</button>
+					</div>
+				</div><!-- END data-row -->
+
 
 			</div>
 		</div>
@@ -307,7 +387,7 @@
 		      		</div>		      		
 		      </div>
 		      <div class="row">
-		      	<button class="btn btn-primary">SEARCH</button>
+		      	<button class="btn btn-primary btn-switch" data-wdw="results">SEARCH</button>
 		      </div>
 	    </form>
 
@@ -323,22 +403,22 @@
 				<form class="form">
 						<div class="form-row">
 							<div class="form-control">
-								<label for="firstName" >First Name:</label>
-								<input id="firstName" type="text" placeholder="firstName" required=""/>
+								<label for="first-name" >First Name:</label>
+								<input id="first-name" type="text" placeholder="firstName" required=""/>
 							</div>
 							<div class="form-control">
 								<label for="lastName" >Last Name:</label>
-								<input id="lastName" type="text" placeholder="lastName" required=""/>
+								<input id="last-name" type="text" placeholder="lastName" required=""/>
 							</div>	
 						</div>
 
 						<div class="form-control"> 
 							<label for="email">Email: </label>
-							<input id="email" type="text" placeholder="Email" required=""/>
+							<input id="reg-email" type="text" placeholder="Email" required=""/>
 						</div>
 						<div class="form-control">
 							<label for="password">Password: </label>
-							<input id="password" type="password" placeholder="Password" required=""/>
+							<input id="reg-password" type="password" placeholder="Password" required=""/>
 						</div>
 						
 						<div class="form-control">
@@ -346,11 +426,9 @@
 							<input id="comfirmPassword" type="password" placeholder="Comfirm Password" required=""/>
 						</div>
 						<div class="row">
-							<button class="btn btn-primary btn-switch" id="btnRegister" type="submit" data-wdw="register2">SUBMIT</button>
+							<button class="btn btn-primary" id="btn-register1">SUBMIT</button>
 							<button class="btn btn-default" id="btnCancel" type="button">CLEAR</button>
 						</div>
-
-
 				</form>
 			</div>
 		</div>
@@ -363,39 +441,34 @@
 			<div class="flex-inner">
 				<form class="form">
 
-
 						<div class="form-control">
 							<label for="" >Company Name: </label>
-							<input id="companyName" type="text" placeholder="companyName" required=""/>
+							<input id="company-name" type="text" placeholder="companyName" required=""/>
 						</div>
 						<div class="form-control">
 							<label for="address">Address: </label>
 							<input id="address" type="text" placeholder="address" required=""/>
 						</div>
-
 						<div class="form-row">
-							
 							<div class="form-control">
 								<label for="city">City: </label>
 								<input id="city" type="text" placeholder="city" required=""/>
 							</div>
 							<div class="form-control">
 								<label for="postNumber">Post Number: </label>
-								<input id="postNumber" type="text" placeholder="postNumber" required=""/>
+								<input id="post-number" type="text" placeholder="postNumber" required=""/>
 							</div>			
 						</div>
-
-
 						<div class="form-control">
 							<label for="phone">Phone: </label>
 							<input id="phone"  type="text" placeholder="Phone" required=""/>
 						</div>
 						<div class="form-control">
 							<label for="businessPhone">Business Phone: </label>
-							<input id="businessPhone" type="text" placeholder="Business Phone" required=""/>
+							<input id="bussines-phone" type="text" placeholder="Business Phone" required=""/>
 						</div>
 						<div class="row">
-							<button class="btn btn-primary" id="btnRegister" type="submit">SUBMIT</button>
+							<button class="btn btn-primary" id="btn-register2" type="submit">SUBMIT</button>
 							<button class="btn btn-default" id="btnCancel" type="button">CLEAR</button>
 						</div>
 
@@ -441,6 +514,7 @@
 	<!-- jQuery  UI -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 	
+	<script src="assets/scripts/account.js"></script>
 	<script src="assets/scripts/app.js"></script>
 </body>
 </html>
