@@ -8,15 +8,33 @@ var Account = (function () {
     var password = document.getElementById('password');
 
 
+    function saveFirstData() {
+
+        var firstName = $('#first-name').val();
+        var lastName = $('#first-name').val();
+        var email = $('#first-name').val();
+        var password = $('#first-name').val();
 
 
-    // storing input from register-form
-    function store() {
+        console.log(firstName, lastName, email, password);
 
         account.firstName = firstName;
         account.lastName = lastName;
         account.email = email;
-        account.password = email;
+        account.password = password;
+
+        App.switchWindow('register2');
+    }
+
+    function saveSecondData() {
+
+        var companyName = $('#company-name').val();
+        var address = $('#address').val();
+        var city = $('#city').val();
+        var postNumber = $('#post-number').val();
+        var phone = $('#phone').val();
+        var bphone = $('#bussines-phone').val();
+
         account.companyName = companyName;
         account.address = address;
         account.city = city;
@@ -24,7 +42,14 @@ var Account = (function () {
         account.phone = phone;
         account.bphone = bphone;
 
-        localStorage.account = account;
+        _store();
+    }
+
+    // storing input from register-form
+    function _store() {
+
+        var result = JSON.stringify(account);
+        localStorage.account = result;
     }
 
     // check if stored data from register-form is equal to entered data in the   login-form
@@ -53,7 +78,8 @@ var Account = (function () {
 
     return {
         login:check,
-        register:store
+        saveFirstData: saveFirstData,
+        saveSecondData: saveSecondData
     }
 
 })();
