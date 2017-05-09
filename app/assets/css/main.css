@@ -315,14 +315,14 @@ footer {
 
 .second-row-mb input[type="date"] {
   background: transparent;
-  width: 265px;
+  width: 268px;
   border: none; }
   .second-row-mb input[type="date"]::-webkit-inner-spin-button {
     display: none; }
 
 .third-row-mb {
   display: flex;
-  min-width: 300px; }
+  height: 50px; }
   .third-row-mb .passanger-input {
     margin-left: 4px;
     border: none;
@@ -333,7 +333,8 @@ footer {
   display: flex;
   max-width: 300px;
   border: 1px solid #4DB6AC;
-  margin-right: 10px; }
+  margin-right: 10px;
+  height: 50px; }
   #passanger:before {
     font-family: FontAwesome;
     content: "\f21b";
@@ -341,11 +342,7 @@ footer {
     width: 35px;
     color: #009688;
     font-size: 1.5em;
-    margin: 15px 4px;
-    /*align-content:center;*/
-    /*margin-top: 15px;*/
-    /*display: block;*/
-    /*margin-left: 4px;	*/ }
+    margin: 15px 4px; }
 
 .triptype-dropdown {
   width: 50em;
@@ -367,15 +364,33 @@ footer {
   -webkit-appearance: button;
   -moz-appearance: none; }
 
-@media only screen and (min-width: 601px) and (max-width: 901px) {
-  #first-row-lg, .first-row-mb, .second-row-mb {
-    display: flex;
-    align-items: center; } }
+@media only screen and (min-width: 601px) and (max-width: 1280px) {
+  .first-row-mb, .second-row-mb {
+    display: flex; }
+  .destination-from,
+  .destination-to,
+  #date-from,
+  #date-to,
+  .triptype-dropdown,
+  .third-row-mb {
+    margin: auto;
+    width: 270px; } }
 
-@media only screen and (min-width: 901px) {
-  .first-row-lg, .first-row-mb, .second-row-mb {
+@media only screen and (min-width: 1280px) {
+  .first-row-lg {
     display: flex;
-    align-items: center; } }
+    margin: auto;
+    align-items: center; }
+  .first-row-mb, .second-row-mb, .third-row-mb {
+    margin: auto;
+    display: flex;
+    width: 540px; }
+  .destination-from,
+  .destination-to,
+  #date-from,
+  #date-to {
+    margin: auto;
+    width: 230px; } }
 
 .cover {
   position: relative;

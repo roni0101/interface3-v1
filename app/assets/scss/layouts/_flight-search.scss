@@ -11,8 +11,7 @@
 
 .first-row-mb select{
 	-webkit-appearance: button;
-	-moz-appearance: none;  
-
+	-moz-appearance: none;
 	width: 265px;
 	border: none;
 }
@@ -55,15 +54,14 @@
 		content: "\f073"; /*fa fa-calendar*/
 		margin: 10px 4px;
 		color: $main-color;
-		font-size: 1.5em;
-		
+		font-size: 1.5em;		
 
 	}	
 }
 
 .second-row-mb input[type="date"]{	
 	background: transparent;
-	width: 265px;
+	width: 268px;
 	border: none;
 		&::-webkit-inner-spin-button {
 		display: none;
@@ -73,7 +71,8 @@
 
 .third-row-mb{
 	display: flex;
-	min-width: 300px;
+	
+	height: 50px;
 	.passanger-input{
 		margin-left:4px;
 		border:none;
@@ -86,9 +85,8 @@
 	display: flex;
 	max-width: 300px;
 	border:1px solid $b-main-color;		
-	margin-right: 10px;
-
-	
+	margin-right: 10px;	
+	height: 50px;
 	&:before{
 	  	font-family:FontAwesome;
 		content: "\f21b";  /*fa-user-secret*/	
@@ -96,10 +94,6 @@
 		color: $main-color;
 		font-size: 1.5em;
 		margin: 15px 4px;
-		/*align-content:center;*/
-		/*margin-top: 15px;*/
-		/*display: block;*/
-		/*margin-left: 4px;	*/
 	}	
 }
 
@@ -125,29 +119,42 @@
    -moz-appearance: none;   
 }
 
-
-
-
-
-@include respond-to(medium) {
-
-	#first-row-lg, .first-row-mb, .second-row-mb{
+@include respond-to(medium-search) {
+.first-row-mb, .second-row-mb{
 	display: flex;
-	align-items: center;
 
-
-
-	}
+}
+ .destination-from, 
+ .destination-to, 
+ #date-from, 
+ #date-to, 
+ .triptype-dropdown, 
+ .third-row-mb
+ {
+		margin: auto;
+		width: 270px;
+	}	
 }
 
-@include respond-to(large) {
-
-	 .first-row-lg, .first-row-mb, .second-row-mb{
-	display: flex;
-	align-items: center;
+@include respond-to(large-search) {
+	.first-row-lg {
+		display: flex;
+		margin: auto;
+		align-items: center;
+	}.first-row-mb, .second-row-mb, .third-row-mb,  
+	 	{
+	 	margin: auto;		
+	 	display: flex;		
+		width: 540px;
+		}
+		.destination-from, 
+		 .destination-to, 
+		 #date-from, 
+		 #date-to
+		 {
+			margin:auto;
+			width: 230px;
+		}		
 	
-
-
-	}
 }
 
