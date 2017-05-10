@@ -85,8 +85,8 @@ var App = (function() {
 	
 		}
 	}
-	
-	
+
+
 
 	// EVENT LISTENERS
 
@@ -99,8 +99,9 @@ var App = (function() {
 	$doc.on('click', '#btnLogin', Account.login);
 	$doc.on('click', '#btn-register1', Account.saveFirstData);
 	$doc.on('click', '#btn-register2', Account.saveSecondData);
-	
-	
+	$doc.on('click', '#btn-register2', Account.saveSecondData);
+	$doc.on('click', '#btn-register2', Account.saveSecondData);
+		
 	$win.on('resize', _onWinResize);
 
 
@@ -109,7 +110,6 @@ var App = (function() {
 			switchWindow:switchWindow
 	}
 })();
-
 
 
 	
