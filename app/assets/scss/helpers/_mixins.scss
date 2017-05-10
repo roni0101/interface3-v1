@@ -1,5 +1,6 @@
 $break-small: 601px;
 $break-large: 901px;
+$break-large-search: 1280px;
 
 @mixin respond-to($media) {
   @if $media == medium {
@@ -7,5 +8,12 @@ $break-large: 901px;
   }
   @else if $media == large {
     @media only screen and (min-width: $break-large) { @content; }
+  } 
+  @else if $media == medium-search {
+    @media only screen and (min-width: $break-small) and (max-width: $break-large-search) { @content; }
+  }
+
+  @else if $media == large-search {
+    @media only screen and (min-width: $break-large-search) { @content; }
   }
 }

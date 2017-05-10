@@ -1,6 +1,6 @@
 
 
-var app = (function() {
+var App = (function() {
 	
 
 	// CACHE DOM
@@ -70,6 +70,7 @@ var app = (function() {
 
 		var  windowToShow = "#wdw-" + wdwName;
 		$wdw.hide();
+		Account.auth();
 		$(windowToShow).show();
 	}
 
@@ -96,6 +97,9 @@ var app = (function() {
 	$doc.on('click', 'form button', _stopFormSubmit);
 	$doc.on('click', '#from', addDatePicker);
 	$doc.on('click', '#to', addDatePicker);
+	$doc.on('click', '#btnLogin', Account.login);
+	$doc.on('click', '#btn-register1', Account.saveFirstData);
+	$doc.on('click', '#btn-register2', Account.saveSecondData);
 	
 	
 	$win.on('resize', _onWinResize);

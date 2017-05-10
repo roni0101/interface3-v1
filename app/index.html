@@ -17,13 +17,10 @@
 	<!-- DatePicker -->
 	<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
 
-
-
 </head>
 
 
 <body>
-
 <nav class="navbar">
 	<div class="nav-brand">
 		<a class="btn-switch" data-wdw="home" href="#"><i class="fa fa-plane"></i> TRAVEL WORLD</a>
@@ -32,13 +29,25 @@
 		<span><i class="fa fa-bars" aria-hidden="true"></i></span>
 	</div>
 	<ul>
-		<li><a class="btn-switch active" data-wdw="home" href="#">Home</a></li>
-		<li><a class="btn-switch" data-wdw="search" href="#">Search</a></li>
-		<li><a class="btn-switch" data-wdw="register" href="#">Register</a></li>
-		<li><a class="btn-switch" data-wdw="login" href="#">Login</a></li>
+		<li>
+            <a class="btn-switch active" data-wdw="home" href="#">Home</a>
+        </li>
+		<li>
+            <a class="btn-switch" data-wdw="search" href="#">Search</a>
+        </li>
+		<li data-auth="non">
+            <a class="btn-switch" data-wdw="register" href="#">Register</a>
+        </li>
+        <li data-auth="non">
+            <a class="btn-switch" data-wdw="login" href="#">Login</a>
+        </li>
+        <li data-auth="member" >
+            <a class="btn-switch" data-wdw="account" href="#">Account</a>
+        </li>
+		<li data-auth="member" >
+            <a class="btn-logout" href="#">Logout</a>
+        </li>
 	</ul>
-
-
 </nav>
 
 
@@ -106,7 +115,85 @@
 					</div>
 				</div><!-- END data-row -->
 
+				<div class="data-row">
+					<div class="main-data">
+						<img src="assets/images/icons/direction.png" alt="direction">
+						<div>
+							<div class="data">
+								<span>15:30</span>
+								<span>2 Octomber</span>
+								<span>Copenhagen</span>
+							</div>
+							<div class="data">
+								<span>17:10</span>
+								<span>2 Octomber</span>
+								<span>Barcelona</span>
+							</div>
+						</div>	
+					</div>
+					<div class="additional-data">
+						<div>
+							<img class="icon" src="assets/images/icons/time.png" alt="Time">
+							<span>1h 25min</span>
+						</div>
+						<div>
+							<img class="icon" src="assets/images/icons/company.png" alt="Time">
+							<span>Air Berlin</span>
+						</div>
+						<div>
+							<img class="icon" src="assets/images/icons/class.png" alt="Time">
+							<span>Bussines</span>
+						</div>
+						<div>
+							<img class="icon" src="assets/images/icons/number.png" alt="Time">
+							<span>46231</span>
+						</div>
+					</div>
+					<div class="price-data">
+						<strong>504.00 DKK</strong>
+						<button class="btn btn-primary btn-switch" data-wdw="confirm">SELECT</button>
+					</div>
+				</div><!-- END data-row -->
 
+				<div class="data-row">
+					<div class="main-data">
+						<img src="assets/images/icons/direction.png" alt="direction">
+						<div>
+							<div class="data">
+								<span>15:30</span>
+								<span>2 Octomber</span>
+								<span>Copenhagen</span>
+							</div>
+							<div class="data">
+								<span>17:10</span>
+								<span>2 Octomber</span>
+								<span>Barcelona</span>
+							</div>
+						</div>	
+					</div>
+					<div class="additional-data">
+						<div>
+							<img class="icon" src="assets/images/icons/time.png" alt="Time">
+							<span>1h 25min</span>
+						</div>
+						<div>
+							<img class="icon" src="assets/images/icons/company.png" alt="Time">
+							<span>Air Berlin</span>
+						</div>
+						<div>
+							<img class="icon" src="assets/images/icons/class.png" alt="Time">
+							<span>Bussines</span>
+						</div>
+						<div>
+							<img class="icon" src="assets/images/icons/number.png" alt="Time">
+							<span>46231</span>
+						</div>
+					</div>
+					<div class="price-data">
+						<strong>504.00 DKK</strong>
+						<button class="btn btn-primary btn-switch" data-wdw="confirm">SELECT</button>
+					</div>
+				</div><!-- END data-row -->
 			</div>
 		</div>
 	</div>
@@ -240,28 +327,29 @@
 <div class="wdw" id="wdw-search">
 	<div class="container">
 		<h2>SEARCH FLYIGHTS</h2>
+			<!-- class="flex-form form" -->
+		<form class="search-form">
 
-	    <form class="flex-form form">
-	      <div class="first-row ">
-	      <ul>
-	      	<li >
-	      		<div class="destination-from">
-	      			<select id="Departure">
-	      				<option>Departure City/Airport</option>	      		
-	      				<option>Malmo(mlm)</option>
-						<option>Sofia(sof)</option>
-	      				<option>Kiev(brp)</option>
-	      				<option>Kiev(zhul)</option>
-	      				<option>Stockholm(stk)</option>
-	      				<option>Berlin(brl)</option>
-	      				<option>London(gatwik)</option>
-	      				<option>London(lutton)</option>	      				
-	      				<option>Copenhagen(taastrup)</option>
-	      			</select>
-	      		</div>
-	      		
-	      	</li>
-	      	<li>
+			<div class="first-row-lg">
+				
+				<div class="first-row-mb ">
+	   
+		      		<div class="destination-from">
+		      			<select id="Departure">
+		      				<option>Departure City/Airport</option>	      		
+		      				<option>Malmo(mlm)</option>
+							<option>Sofia(sof)</option>
+		      				<option>Kiev(brp)</option>
+		      				<option>Kiev(zhul)</option>
+		      				<option>Stockholm(stk)</option>
+		      				<option>Berlin(brl)</option>
+		      				<option>London(gatwik)</option>
+		      				<option>London(lutton)</option>	      				
+		      				<option>Copenhagen(taastrup)</option>
+		      			</select>
+		      		</div>
+		      		
+	      
 	      		<div class="destination-to">
 	      			<select id="destination">
 	      				<option>Destination City/Airport</option>
@@ -275,14 +363,10 @@
 	      				<option>London(lutton)</option>	      				
 	      				<option>Copenhagen(taastrup)</option>
 	      			</select>
-	      		</div>
-	      		
-	      	</li>
-	      </ul>
-	        
+	      		</div>	        
 	      	
 	     </div> 
-	    <div class="second-row">
+	    <div class="second-row-mb">
 		    <!-- <label for="from">From</label> -->
 	      	<div id="date-from">
 	      		<input class="fa fa-long-arrow-right" id="from" type="date" name="from">	
@@ -290,28 +374,29 @@
 	      	<!-- <label for="from">To</label> -->
 	      	<div  id="date-to">
 	      		<input class="fa fa-long-arrow-left" id="to" type="date" name="to">
-	      	</div>
-
-	      	<div id="passanger" >
-		      	<input size="initial-scale" type="number" min="1" max="10" value="1">
-		    </div>  
+	      	</div> 
 	      
-	     </div>	  
-	      <div class="third-row">
-	      		<div class="triptype-dropdown">
-	      		
-	      			<select class="triptype">
-			      		<option value="one-way">one way trip</option>
-				      	<option value="return">return trip</option>
-			      	</select>
+		     </div>	  
+			</div>
 	      
+		      <div class="third-row-mb">
+		      		<div id="passanger" >
+		      				<input class="passanger-input" size="initial-scale" type="number" min="1" max="10" value="1">
+		   	 		</div> 
+			      	    	
+		      		<div class="triptype-dropdown">		      			
+		      			<div>
+		      				<select class="triptype">
+					      		<option value="one-way">one way trip</option>
+						      	<option value="return">return trip</option>
+				      		</select>
+		      			</div>		      		
+		      		</div>	
 		      		
-	      		</div>
-		      	    	
-	      </div>
-	      <div class="row">
-	      	<button class="btn btn-primary">SEARCH</button>
-	      </div>
+		      			<button class="btn btn-primary btn-switch" data-wdw="results">SEARCH</button>
+		      	      		
+		      </div>
+		     
 	    </form>
 
     </div>
@@ -326,22 +411,22 @@
 				<form class="form">
 						<div class="form-row">
 							<div class="form-control">
-								<label for="firstName" >First Name:</label>
-								<input id="firstName" type="text" placeholder="firstName" required=""/>
+								<label for="first-name" >First Name:</label>
+								<input id="first-name" type="text" placeholder="firstName" required=""/>
 							</div>
 							<div class="form-control">
 								<label for="lastName" >Last Name:</label>
-								<input id="lastName" type="text" placeholder="lastName" required=""/>
+								<input id="last-name" type="text" placeholder="lastName" required=""/>
 							</div>	
 						</div>
 
 						<div class="form-control"> 
 							<label for="email">Email: </label>
-							<input id="email" type="text" placeholder="Email" required=""/>
+							<input id="reg-email" type="text" placeholder="Email" required=""/>
 						</div>
 						<div class="form-control">
 							<label for="password">Password: </label>
-							<input id="password" type="password" placeholder="Password" required=""/>
+							<input id="reg-password" type="password" placeholder="Password" required=""/>
 						</div>
 						
 						<div class="form-control">
@@ -349,11 +434,9 @@
 							<input id="comfirmPassword" type="password" placeholder="Comfirm Password" required=""/>
 						</div>
 						<div class="row">
-							<button class="btn btn-primary btn-switch" id="btnRegister" type="submit" data-wdw="register2">SUBMIT</button>
+							<button class="btn btn-primary" id="btn-register1">SUBMIT</button>
 							<button class="btn btn-default" id="btnCancel" type="button">CLEAR</button>
 						</div>
-
-
 				</form>
 			</div>
 		</div>
@@ -366,39 +449,34 @@
 			<div class="flex-inner">
 				<form class="form">
 
-
 						<div class="form-control">
 							<label for="" >Company Name: </label>
-							<input id="companyName" type="text" placeholder="companyName" required=""/>
+							<input id="company-name" type="text" placeholder="companyName" required=""/>
 						</div>
 						<div class="form-control">
 							<label for="address">Address: </label>
 							<input id="address" type="text" placeholder="address" required=""/>
 						</div>
-
 						<div class="form-row">
-							
 							<div class="form-control">
 								<label for="city">City: </label>
 								<input id="city" type="text" placeholder="city" required=""/>
 							</div>
 							<div class="form-control">
 								<label for="postNumber">Post Number: </label>
-								<input id="postNumber" type="text" placeholder="postNumber" required=""/>
+								<input id="post-number" type="text" placeholder="postNumber" required=""/>
 							</div>			
 						</div>
-
-
 						<div class="form-control">
 							<label for="phone">Phone: </label>
 							<input id="phone"  type="text" placeholder="Phone" required=""/>
 						</div>
 						<div class="form-control">
 							<label for="businessPhone">Business Phone: </label>
-							<input id="businessPhone" type="text" placeholder="Business Phone" required=""/>
+							<input id="bussines-phone" type="text" placeholder="Business Phone" required=""/>
 						</div>
 						<div class="row">
-							<button class="btn btn-primary" id="btnRegister" type="submit">SUBMIT</button>
+							<button class="btn btn-primary" id="btn-register2" type="submit">SUBMIT</button>
 							<button class="btn btn-default" id="btnCancel" type="button">CLEAR</button>
 						</div>
 
@@ -433,6 +511,46 @@
 		</div>
 	</div>
 
+
+	<div class="wdw" id="wdw-account">
+		
+		<div class="container">
+			
+			<h2>Account</h2>
+
+			<div class="row">
+				<ul class="info-ul">
+					<li>
+						<div data-user="name">
+							<i class="fa fa-user"></i>
+							<span> John Doe</span>
+						</div>
+					</li>
+					<li>
+                        <div data-user="email">
+                            <i class="fa fa-envelope"></i>
+                            <span>john@gmail.com</span>
+                        </div>
+                    </li>
+					<li>
+                        <div data-user="phone">
+                            <i class="fa fa-phone"></i>
+                            <span>12 34 5678</span>
+                        </div>
+                    </li>
+					<li>
+                        <div data-user="address">
+                            <i class="fa fa-map-marker"></i>
+                            <span>Street 1, City</span>
+                        </div>
+                    </li>
+				</ul>
+			</div>
+
+		</div>
+
+	</div>
+
 </main>
 	
 
@@ -444,6 +562,7 @@
 	<!-- jQuery  UI -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 	
+	<script src="assets/scripts/account.js"></script>
 	<script src="assets/scripts/app.js"></script>
 </body>
 </html>

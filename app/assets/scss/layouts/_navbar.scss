@@ -59,6 +59,13 @@ $nav-height: 50px;
 				}
 			}
 		}
+
+
+		[data-auth="member"] {
+			// background-color:red;
+			display:none;
+		}
+			
 	}
 }
 
@@ -93,3 +100,5 @@ $nav-height: 50px;
 
 	}
 }
+
+
