@@ -209,14 +209,6 @@ footer {
   justify-content: center;
   align-items: center; }
 
-<<<<<<< HEAD
-.first-row select {
-  -webkit-appearance: button;
-  -moz-appearance: none;
-  background: transparent;
-  width: 265px;
-  border: none; }
-=======
 .flights-list {
   width: 90%;
   display: block;
@@ -271,9 +263,12 @@ footer {
     .flights-list .additional-data > div {
       margin-right: 20px; } }
 
-.first-row {
-  justify-content: space-between; }
->>>>>>> 3436dd1326eeb796e0a7fa4c5c5b2cc99b0c0de3
+.first-row select {
+  -webkit-appearance: button;
+  -moz-appearance: none;
+  background: transparent;
+  width: 265px;
+  border: none; }
 
 .destination-from, .destination-to {
   display: flex;
