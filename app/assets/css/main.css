@@ -116,6 +116,11 @@ h2 {
 .text-main-color {
   color: #009688; }
 
+.info-ul {
+  padding: 10px; }
+  .info-ul i {
+    margin-right: 5px; }
+
 .navbar {
   position: fixed;
   top: 0;
@@ -160,6 +165,8 @@ h2 {
         color: white; }
         .navbar ul li a:hover, .navbar ul li a.active {
           background-color: rgba(0, 0, 0, 0.2); }
+    .navbar ul [data-auth="member"] {
+      display: none; }
 
 @media only screen and (min-width: 901px) {
   .navbar {

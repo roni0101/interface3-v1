@@ -1,11 +1,34 @@
 var Account = (function () {
-	
+	var isLogedin = false;
+
     var account = {};
 
+    var $acc = $('#wdw-account');
+
+    var $name = $acc.find('div[data-user=name] span');
+    var $phone = $acc.find('div[data-user=phone] span');
+    var $address = $acc.find('div[data-user=address] span');
+    var $email = $acc.find('div[data-user=email] span');
+
+
+    
 
     // Email and Password from the register-form
     var email = document.getElementById('email');
     var password = document.getElementById('password');
+
+    $nav = $('nav ul')
+
+    function auth() {
+        if( isLogedin ){
+            $('[data-auth=member]').css('display', 'inline-block');
+            $('[data-auth=non]').hide();
+        }
+        if( !isLogedin ){
+            $('[data-auth=member]').hide();
+            $('[data-auth=non]').css('display', 'inline-block');
+        }
+    }
 
 
     function saveFirstData() {
@@ -14,9 +37,6 @@ var Account = (function () {
         var lastName = $('#first-name').val();
         var email = $('#first-name').val();
         var password = $('#first-name').val();
-
-
-        console.log(firstName, lastName, email, password);
 
         account.firstName = firstName;
         account.lastName = lastName;
@@ -50,7 +70,10 @@ var Account = (function () {
     function _store() {
 
         var result = JSON.stringify(account);
+
+        localStorage.account = "";
         localStorage.account = result;
+
     }
 
     // check if stored data from register-form is equal to entered data in the   login-form
@@ -58,8 +81,13 @@ var Account = (function () {
     {
 
         // stored data from the register-form
+        if(!localStorage.account){
+
+            alert('Must register first');
+            return false;
+
+        }
         var lsAccount = JSON.parse( localStorage.account );
-        console.log(lsAccount);
 
         var storedEmail = lsAccount.email;
         var storedPassword = lsAccount.password;
@@ -74,16 +102,35 @@ var Account = (function () {
             alert('ERROR');
         }else 
         {
-            alert('You are loged in.');
+            if(localStorage.account){
+                var currentAcc = JSON.parse( localStorage.account );
+                $name.text( currentAcc.firstName + " " + currentAcc.lastName );
+                $email.text( currentAcc.email );
+                $phone.text( currentAcc.phone);
+                $address.text( currentAcc.address );
+            
+            }
+            isLogedin = true;
+             App.switchWindow('account');
         }
     }
 
+
+    function logOut(e) {
+        e.preventDefault();
+        isLogedin = false;
+        App.switchWindow('home');
+    }
+
+
+    $(document).on('click', '.btn-logout', logOut);
 
 
     return {
         login:check,
         saveFirstData: saveFirstData,
-        saveSecondData: saveSecondData
+        saveSecondData: saveSecondData,
+        auth:auth
     }
 
 })();

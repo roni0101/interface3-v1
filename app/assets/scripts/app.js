@@ -70,6 +70,7 @@ var App = (function() {
 
 		var  windowToShow = "#wdw-" + wdwName;
 		$wdw.hide();
+		Account.auth();
 		$(windowToShow).show();
 	}
 
